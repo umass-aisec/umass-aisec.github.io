@@ -2,6 +2,10 @@ body {
     font-family: 'Open Sans';
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 .umass {
     color: #971B2F;
     font-weight: bold;
@@ -53,4 +57,8 @@ body {
 
 #seminar .bg-primary {
     background-color: #971B2F !important;
+}
+
+#calendar span {
+    text-align: left;
 }
