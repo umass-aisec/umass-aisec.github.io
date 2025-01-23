@@ -30,11 +30,11 @@ body {
     min-height: 40vh;
 }
 
-#people a {
+.people a {
     text-decoration: none !important;
 }
 
-#people .card {
+.people .card {
     border: none;
     font-size: 8pt;
 }
@@ -50,7 +50,7 @@ body {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#people .card:hover > .profile-img-card {
+.people .card:hover > .profile-img-card {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 1.0);
     transition-duration: 200ms;
 }
