@@ -2,6 +2,11 @@ body {
     font-family: 'Open Sans';
 }
 
+#logo {
+    height: 2.5em;
+    width: auto;
+}
+
 .text-align {
     text-align: left;
 }
@@ -67,6 +72,17 @@ body {
     font-size: 8pt;
 }
 
-#calendar span {
+#calendar .topic {
     text-align: left;
+}
+
+#calendar .badge {
+    text-align: center;
+    width: auto;
+}
+
+@media (max-width: 576px) {
+    .list-group-item {
+        border: none; /* Removes the border on small screens */
+    }
 }
