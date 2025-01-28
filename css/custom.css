@@ -3,7 +3,7 @@ body {
 }
 
 #logo {
-    height: 2.5em;
+    height: 5em;
     width: auto;
 }
 
@@ -84,5 +84,10 @@ body {
 @media (max-width: 576px) {
     .list-group-item {
         border: none; /* Removes the border on small screens */
+    }
+
+    #logo {
+        height: 4em;
+        width: auto;
     }
 }
