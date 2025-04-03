@@ -95,10 +95,11 @@ a:hover {
     width: auto;
 }
 
+#calendar .list-group-item {
+    border: none;
+}
+
 @media (max-width: 576px) {
-    .list-group-item {
-        border: none; /* Removes the border on small screens */
-    }
 
     #logo {
         height: 4em;
