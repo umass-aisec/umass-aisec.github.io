@@ -87,9 +87,9 @@ const roster = [
         "name": "Milad Nasr",
         "affiliation": "Google",
         "link": "https://www.linkedin.com/in/milad-nasr-50ab6a56",
-        "title": "Topic TBD",
-        "abstract": null,
-        "bio": null
+        "title": "Rethinking Exploitation in the Age of Large Language Models",
+        "abstract": "Large Language Models (LLMs) present a significant potential to transform the exploit monetization landscape, enabling more sophisticated attack vectors beyond current methodologies. Whereas traditional attacks often target the lowest common denominator (e.g., broad ransomware deployment), LLM-driven approaches could facilitate highly targeted attacks, such as analyzing compromised personal data to identify and leverage sensitive information for blackmail, potentially followed by encryption. Furthermore, LLMs could automate the discovery of vulnerabilities across a multitude of niche products, contrasting with the manual effort required to find complex bugs in high-profile systems. We provide proof-of-concept implementations demonstrating these capabilities, including an instance where an LLM autonomously identified sensitive personal correspondence within the Enron email dataset without human guidance. While the current cost structure renders these LLM-based attacks economically challenging for widespread scaling, the decreasing cost of LLM technology presents a growing economic incentive for their use.",
+        "bio": "Milad Nasr is a Research Scientist at Google DeepMind, specializing in machine learning security and privacy. He earned his Ph.D. in Computer Science from the University of Massachusetts Amherst in 2021, where he was advised by Professor Amir Houmansadr. Milad’s research focuses on developing attacks and defenses for privacy vulnerabilities in AI systems, with a particular emphasis on membership inference, data leakage, and adversarial robustness. His work has been published in leading venues such as IEEE S&P, USENIX Security, ICML, and NeurIPS. He won the Outstanding Paper Award at NeurIPS 2023 and the Distinguished Paper Award at Usenix Security 2023. He has also contributed to high-profile projects, including the Gemini multimodal models.",
     },
     {
         "date": "Fri, Apr 18",
