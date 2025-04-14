@@ -97,8 +97,8 @@ const roster = [
         "affiliation": "ETH Zurich",
         "link": "https://edoardo.science/",
         "title": "Defeating Prompt Injections by Design",
-        "abstract": null,
-        "bio": null
+        "abstract": "Large Language Models (LLMs) are increasingly deployed in agentic systems that interact with an external environment. However, LLM agents are vulnerable to prompt injection attacks when handling untrusted data. In this paper we propose CaMeL, a robust defense that creates a protective system layer around the LLM, securing it even when underlying models may be susceptible to attacks. To operate, CaMeL explicitly extracts the control and data flows from the (trusted) query; therefore, the untrusted data retrieved by the LLM can never impact the program flow. To further improve security, CaMeL relies on a notion of a capability to prevent the exfiltration of private data over unauthorized data flows. We demonstrate effectiveness of CaMeL by solving 67% of tasks with provable security in AgentDojo [NeurIPS 2024], a recent agentic security benchmark.",
+        "bio": "Edoardo Debenedetti is a PhD student in Computer Science at ETH Zurich, advised by Prof. Florian Tramèr, where his research focuses on real-world machine learning security and privacy, mostly from an offensive point of view. Most recently, he's been looking into the security of AI agents. His research is funded by a CYD Doctoral Fellowship from the Armasuisse Cyber-Defense Campus. He recently worked as a Student Researcher at Google, focusing on AI agent security with the AI Red Team and DeepMind. His work has been published at major security and machine learning conferences, receiving recognitions such as a Distinguished Paper Runner-up at SaTML 2024 and a Spotlight at NeurIPS 2024.",
     },
     {
         "date": "Mon, Apr 28",
