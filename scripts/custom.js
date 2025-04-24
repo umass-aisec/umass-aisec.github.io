@@ -105,9 +105,9 @@ const roster = [
         "name": "Jonas Geiping",
         "affiliation": "ELLIS Institute",
         "link": "https://jonasgeiping.github.io/",
-        "title": "Topic TBD",
-        "abstract": null,
-        "bio": null,
+        "title": "Increasing Trust through New Benchmarks and Measuring Model Oversight",
+        "abstract": "In this talk, I want to talk about recent work in posing relevant benchmarks to modern model behavior that complement existing evaluations. I want to then talk about generalizations into broader domains, which require model oversight. We'll discuss how model oversight is limited by model similarity, and how to correctly quantify model similarity.",
+        "bio": "Jonas Geiping is a Machine Learning researcher in Tübingen, where he leads the research group for safety- & efficiency-aligned learning. Before this, he has spent time at the Universities of Maryland, Siegen, and Münster.",
     },
     {
         "date": "Mon, May 05",
