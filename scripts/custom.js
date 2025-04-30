@@ -111,12 +111,12 @@ const roster = [
     },
     {
         "date": "Mon, May 05",
-        "name": "Speaker TBD",
-        "affiliation": "TBD",
+        "name": "PhD Students",
+        "affiliation": "UMass Amherst",
         "link": "#",
-        "title": "Topic TBD",
-        "abstract": null,
-        "bio": null
+        "title": "Lightning research talks on a variety of topics (e.g. MIA, DP, privacy, watermarking, jailbreaking)",
+        "abstract": "In our last seminar, we will have our very own UMass PhD students present their research in AI security and privacy. Topics include: Optimizing Private Measurements for DP Synthetic Data, Synthesizing Cryptographic and NLP LLM Watermarking, Semantic Hashing: Private Image-to-Image Retrieval, Can LLMs Really Recognize Your Names?, Stealthy Membership Inference for Retrieval-Augmented Generation, Multilingual and Multi-Accent Jailbreaking of Audio LLMs. We'll also have some snacks and coffee!",
+        "bio": null,
     },
 ]
 
