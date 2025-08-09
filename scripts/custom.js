@@ -74,9 +74,9 @@ const roster = [
     {
         "date": "Mon, Nov 03",
         "date2": "2025/11/03",
-        "name": "Kathrin Grosse",
-        "affiliation": "IBM Research",
-        "link": "https://scholar.google.com/citations?user=LrYcIxYAAAAJ",
+        "name": null,
+        "affiliation": null,
+        "link": null,
         "title": null,
         "abstract": null,
         "bio": null,
