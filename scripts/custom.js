@@ -186,7 +186,7 @@ const previous_seminars = ["S25"];
 const archived = [];
 for (let seminar of previous_seminars) {
     const link = fromHTML(`
-        <a target="_blank" href="./${seminar}/index.html" class="pe-3">${seminar[0] == "S" ? "Spring" : "Fall"} 20${seminar.slice(1)}</a>`
+        <a target="_blank" href="./${seminar}/" class="pe-3">${seminar[0] == "S" ? "Spring" : "Fall"} 20${seminar.slice(1)}</a>`
     );
     archived.push(link);
 }
