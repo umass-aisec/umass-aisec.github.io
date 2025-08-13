@@ -24,16 +24,16 @@ a:hover {
     font-weight: bold;
 }
 
-.nav-pills .nav-link {
+.nav .nav-link {
     color: #971B2F;
     /* Custom text color for inactive links */
 }
 
-.nav-pills .nav-link:hover {
+.nav .nav-link:hover {
     color: #572932;
 }
 
-.nav-pills .nav-link.active {
+.nav .nav-link.active {
     color: white;
     background-color: #971B2F;
     border-radius: 0;
@@ -59,13 +59,13 @@ a:hover {
 }
 
 .profile-img-card {
-    width: 100%;
+    width: 70%;
     max-width: 175px;
     aspect-ratio: 1 / 1;
     margin: 1rem auto;
     overflow: hidden;
     background-color: #f8f9fa;
-    border-radius: 0%;
+    border-radius: 50%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -80,7 +80,7 @@ a:hover {
     height: 100%;
 }
 
-#seminar .bg-primary {
+#calendar .bg-primary {
     background-color: #971B2F !important;
     font-family: 'Noto Sans Mono';
     font-size: 8pt;
