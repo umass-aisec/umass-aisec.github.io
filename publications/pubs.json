@@ -1,0 +1,352 @@
+[
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2502-00306",
+        "title":"Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation.",
+        "year":"2025",
+        "venue":"arXiv",
+        "coAuthorName":"Ali Naseh, Yuefeng Peng, Anshuman Suri, Harsh Chaudhari, Alina Oprea, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2502-02542",
+        "title":"OverThink: Slowdown Attacks on Reasoning LLMs.",
+        "year":"2025",
+        "venue":"arXiv",
+        "coAuthorName":"Abhinav Kumar, Jaechul Roh, Ali Naseh, Marzena Karpinska, Mohit Iyyer, Amir Houmansadr, Eugene Bagdasarian"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2502-05211",
+        "title":"Decoding FL Defenses: Systemization, Pitfalls, and Remedies.",
+        "year":"2025",
+        "venue":"arXiv",
+        "coAuthorName":"Momin Ahmad Khan, Virat Shejwalkar, Yasra Chandio, Amir Houmansadr, Fatima Muhammad Anwar"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2504-01094",
+        "title":"Multilingual and Multi-Accent Jailbreaking of Audio LLMs.",
+        "year":"2025",
+        "venue":"arXiv",
+        "coAuthorName":"Jaechul Roh, Virat Shejwalkar, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2505-01406",
+        "title":"VIDSTAMP: A Temporally-Aware Watermark for Ownership and Integrity in Video Diffusion Models.",
+        "year":"2025",
+        "venue":"arXiv",
+        "coAuthorName":"Mohammadreza Teymoorianfard, Shiqing Ma, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2505-12625",
+        "title":"R1dacted: Investigating Local Censorship in DeepSeek's R1 Language Model.",
+        "year":"2025",
+        "venue":"arXiv",
+        "coAuthorName":"Ali Naseh, Harsh Chaudhari, Jaechul Roh, Mingshi Wu, Alina Oprea, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2505-14549",
+        "title":"Can Large Language Models Really Recognize Your Name?",
+        "year":"2025",
+        "venue":"arXiv",
+        "coAuthorName":"Dzung Pham, Peter Kairouz, Niloofar Mireshghallah, Eugene Bagdasarian, Chau Minh Pham, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2507-08983",
+        "title":"Exploiting Leaderboards for Large-Scale Distribution of Malicious Models.",
+        "year":"2025",
+        "venue":"arXiv",
+        "coAuthorName":"Anshuman Suri, Harsh Chaudhari, Yuefeng Peng, Ali Naseh, Amir Houmansadr, Alina Oprea"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ndss\/0002KH25",
+        "title":"RAIFLE: Reconstruction Attacks on Interaction-based Federated Learning with Adversarial Data Manipulation.",
+        "year":"2025",
+        "venue":"NDSS",
+        "coAuthorName":"Dzung Pham, Shreyas Kulkarni, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ndss\/PengNH25",
+        "title":"Diffence: Fencing Membership Privacy With Diffusion Models.",
+        "year":"2025",
+        "venue":"NDSS",
+        "coAuthorName":"Yuefeng Peng, Ali Naseh, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/aaai\/TajimaWH25",
+        "title":"Improving Private Random Forest Prediction Using Matrix Representation.",
+        "year":"2025",
+        "venue":"AAAI",
+        "coAuthorName":"Arisa Tajima, Joie Wu, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2403-02437",
+        "title":"SoK: Challenges and Opportunities in Federated Unlearning.",
+        "year":"2024",
+        "venue":"arXiv",
+        "coAuthorName":"Hyejun Jeong, Shiqing Ma, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2403-06319",
+        "title":"Fake or Compromised? Making Sense of Malicious Clients in Federated Learning.",
+        "year":"2024",
+        "venue":"arXiv",
+        "coAuthorName":"Hamid Mozaffari, Sunav Choudhary, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2404-13784",
+        "title":"Iteratively Prompting Multimodal LLMs to Reproduce Natural and AI-Generated Images.",
+        "year":"2024",
+        "venue":"arXiv",
+        "coAuthorName":"Ali Naseh, Katherine Thai, Mohit Iyyer, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2406-05927",
+        "title":"MeanSparse: Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification.",
+        "year":"2024",
+        "venue":"arXiv",
+        "coAuthorName":"Sajjad Amini, Mohammadreza Teymoorianfard, Shiqing Ma, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2406-15213",
+        "title":"Injecting Bias in Text-To-Image Models via Composite-Trigger Backdoors.",
+        "year":"2024",
+        "venue":"arXiv",
+        "coAuthorName":"Ali Naseh, Jaechul Roh, Eugene Bagdasaryan, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2407-08792",
+        "title":"ProxyGPT: Enabling Anonymous Queries in AI Chatbots with (Un)Trustworthy Browser Proxies.",
+        "year":"2024",
+        "venue":"arXiv",
+        "coAuthorName":"Dzung Pham, Jade Sheffey, Chau Minh Pham, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2410-12010",
+        "title":"Bias Similarity Across Large Language Models.",
+        "year":"2024",
+        "venue":"arXiv",
+        "coAuthorName":"Hyejun Jeong, Shiqing Ma, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2411-01705",
+        "title":"Data Extraction Attacks in Retrieval-Augmented Generation via Backdoors.",
+        "year":"2024",
+        "venue":"arXiv",
+        "coAuthorName":"Yuefeng Peng, Junda Wang, Hong Yu, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/nips\/PengRMH24",
+        "title":"OSLO: One-Shot Label-Only Membership Inference Attacks.",
+        "year":"2024",
+        "venue":"NeurIPS",
+        "coAuthorName":"Yuefeng Peng, Jaechul Roh, Subhransu Maji, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2312-03692",
+        "title":"Memory Triggers: Unveiling Memorization in Text-To-Image Generative Models through Word-Level Duplication.",
+        "year":"2023",
+        "venue":"arXiv",
+        "coAuthorName":"Ali Naseh, Jaechul Roh, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2312-07550",
+        "title":"Understanding (Un)Intended Memorization in Text-to-Image Generative Models.",
+        "year":"2023",
+        "venue":"arXiv",
+        "coAuthorName":"Ali Naseh, Jaechul Roh, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/uss\/MozaffariSH23",
+        "title":"Every Vote Counts: Ranking-Based Training of Federated Learning to Resist Poisoning Attacks.",
+        "year":"2023",
+        "venue":"USENIX Security",
+        "coAuthorName":"Hamid Mozaffari, Virat Shejwalkar, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/sp\/KhanSHA23",
+        "title":"On the Pitfalls of Security Evaluation of Robust Federated Learning.",
+        "year":"2023",
+        "venue":"IEEE S&P",
+        "coAuthorName":"Momin Ahmad Khan, Virat Shejwalkar, Amir Houmansadr, Fatima M. Anwar"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/icml\/NasrMTMH23",
+        "title":"Effectively Using Public Data in Privacy Preserving Machine Learning.",
+        "year":"2023",
+        "venue":"ICML",
+        "coAuthorName":"Milad Nasr, Saeed Mahloujifar, Xinyu Tang, Prateek Mittal, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/iccv\/ShejwalkarLH23",
+        "title":"The Perils of Learning From Unlabeled Data: Backdoor Attacks on Semi-supervised Learning.",
+        "year":"2023",
+        "venue":"ICCV",
+        "coAuthorName":"Virat Shejwalkar, Lingjuan Lyu, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ccs\/NasehKIH23",
+        "title":"Stealing the Decoding Algorithms of Language Models.",
+        "year":"2023",
+        "venue":"ACM CCS",
+        "coAuthorName":"Ali Naseh, Kalpesh Krishna, Mohit Iyyer, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2205-10454",
+        "title":"E2FL: Equal and Equitable Federated Learning.",
+        "year":"2022",
+        "venue":"arXiv",
+        "coAuthorName":"Hamid Mozaffari, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2212-01716",
+        "title":"Security Analysis of SplitFed Learning.",
+        "year":"2022",
+        "venue":"arXiv",
+        "coAuthorName":"Momin Ahmad Khan, Virat Shejwalkar, Amir Houmansadr, Fatima M. Anwar"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/uss\/TangMSSNHM22",
+        "title":"Mitigating Membership Inference Attacks by Self-Distillation Through a Novel Ensemble Architecture.",
+        "year":"2022",
+        "venue":"USENIX Security",
+        "coAuthorName":"Xinyu Tang, Saeed Mahloujifar, Liwei Song, Virat Shejwalkar, Milad Nasr, Amir Houmansadr, Prateek Mittal"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/sp\/ShejwalkarHKR22",
+        "title":"Back to the Drawing Board: A Critical Evaluation of Poisoning Attacks on Production Federated Learning.",
+        "year":"2022",
+        "venue":"IEEE S&P",
+        "coAuthorName":"Virat Shejwalkar, Amir Houmansadr, Peter Kairouz, Daniel Ramage"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2110-04350",
+        "title":"FSL: Federated Supermask Learning.",
+        "year":"2021",
+        "venue":"arXiv",
+        "coAuthorName":"Hamid Mozaffari, Virat Shejwalkar, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/uss\/NasrBH21",
+        "title":"Defeating DNN-Based Traffic Analysis Systems in Real-Time With Blind Adversarial Perturbations.",
+        "year":"2021",
+        "venue":"USENIX Security",
+        "coAuthorName":"Milad Nasr, Alireza Bahramali, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ndss\/ShejwalkarH21",
+        "title":"Manipulating the Byzantine: Optimizing Model Poisoning Attacks and Defenses for Federated Learning.",
+        "year":"2021",
+        "venue":"NDSS",
+        "coAuthorName":"Virat Shejwalkar, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ccs\/BahramaliNHGT21",
+        "title":"Robust Adversarial Attacks Against DNN-Based Wireless Communication Systems.",
+        "year":"2021",
+        "venue":"ACM CCS",
+        "coAuthorName":"Alireza Bahramali, Milad Nasr, Amir Houmansadr, Dennis Goeckel, Don Towsley"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/aaai\/ShejwalkarH21",
+        "title":"Membership Privacy for Machine Learning Models Through Knowledge Transfer.",
+        "year":"2021",
+        "venue":"AAAI",
+        "coAuthorName":"Virat Shejwalkar, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2002-06495",
+        "title":"Blind Adversarial Network Perturbations.",
+        "year":"2020",
+        "venue":"arXiv",
+        "coAuthorName":"Milad Nasr, Alireza Bahramali, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2007-11524",
+        "title":"Improving Deep Learning with Differential Privacy using Gradient Encoding and Denoising.",
+        "year":"2020",
+        "venue":"arXiv",
+        "coAuthorName":"Milad Nasr, Reza Shokri, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ndss\/MozaffariH20",
+        "title":"Heterogeneous Private Information Retrieval.",
+        "year":"2020",
+        "venue":"NDSS",
+        "coAuthorName":"Hamid Mozaffari, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ndss\/NasrZHG20",
+        "title":"MassBrowser: Unblocking the Censored Web for the Masses, by the Masses.",
+        "year":"2020",
+        "venue":"NDSS",
+        "coAuthorName":"Milad Nasr, Hadi Zolfaghari, Amir Houmansadr, Amirhossein Ghafari"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-1906-06589",
+        "title":"Reconciling Utility and Membership Privacy via Knowledge Distillation.",
+        "year":"2019",
+        "venue":"arXiv",
+        "coAuthorName":"Virat Shejwalkar, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-1912-02209",
+        "title":"Leveraging Prior Knowledge Asymmetries in the Design of Location Privacy-Preserving Mechanisms.",
+        "year":"2019",
+        "venue":"arXiv",
+        "coAuthorName":"Nazanin Takbiri, Virat Shejwalkar, Amir Houmansadr, Dennis L. Goeckel, Hossein Pishro-Nik"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-1912-11279",
+        "title":"Cronus: Robust and Heterogeneous Collaborative Learning with Black-Box Knowledge Transfer.",
+        "year":"2019",
+        "venue":"arXiv",
+        "coAuthorName":"Hongyan Chang, Virat Shejwalkar, Reza Shokri, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ndss\/NasrFHG19",
+        "title":"Enemy At the Gateways: Censorship-Resilient Proxy Distribution Using Game Theory.",
+        "year":"2019",
+        "venue":"NDSS",
+        "coAuthorName":"Milad Nasr, Sadegh Farhang, Amir Houmansadr, Jens Grossklags"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/sp\/NasrSH19",
+        "title":"Comprehensive Privacy Analysis of Deep Learning: Passive and Active White-box Inference Attacks against Centralized and Federated Learning.",
+        "year":"2019",
+        "venue":"IEEE S&P",
+        "coAuthorName":"Milad Nasr, Reza Shokri, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ccs\/NasrBH18",
+        "title":"DeepCorr: Strong Flow Correlation Attacks on Tor Using Deep Learning.",
+        "year":"2018",
+        "venue":"ACM CCS",
+        "coAuthorName":"Milad Nasr, Alireza Bahramali, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ccs\/NasrSH18",
+        "title":"Machine Learning with Membership Privacy using Adversarial Regularization.",
+        "year":"2018",
+        "venue":"ACM CCS",
+        "coAuthorName":"Milad Nasr, Reza Shokri, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ccs\/NasrHM17",
+        "title":"Compressive Traffic Analysis: A New Paradigm for Scalable Traffic Analysis.",
+        "year":"2017",
+        "venue":"ACM CCS",
+        "coAuthorName":"Milad Nasr, Amir Houmansadr, Arya Mazumdar"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ccs\/NasrZH17",
+        "title":"The Waterfall of Liberty: Decoy Routing Circumvention that Resists Routing Attacks.",
+        "year":"2017",
+        "venue":"ACM CCS",
+        "coAuthorName":"Milad Nasr, Hadi Zolfaghari, Amir Houmansadr"
+    },
+    {
+        "pub":"https:\/\/dblp.org\/rec\/conf\/ccs\/NasrH16",
+        "title":"GAME OF DECOYS: Optimal Decoy Routing Through Game Theory.",
+        "year":"2016",
+        "venue":"ACM CCS",
+        "coAuthorName":"Milad Nasr, Amir Houmansadr"
+    }
+]
