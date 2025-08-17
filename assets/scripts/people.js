@@ -51,12 +51,6 @@ const student_data = [
         "alumnus": false,
     },
     {
-        "name": "Alireza Bahramali",
-        "link": "https://www.linkedin.com/in/alireza-bahramali/",
-        "img": "alireza.jpg",
-        "alumnus": true,
-    },
-    {
         "name": "Virat Shejwalkar",
         "link": "https://people.cs.umass.edu/~vshejwalkar/",
         "img": "virat.jpg",
@@ -74,12 +68,6 @@ const student_data = [
         "img": "milad.jfif",
         "alumnus": true,
     },
-    {
-        "name": "Fatemeh Rezaei",
-        "link": "https://www.linkedin.com/in/fatemerezaei/",
-        "img": "fatemeh.jfif",
-        "alumnus": true,
-    }
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 function fillPeopleData(div_id, data) {
