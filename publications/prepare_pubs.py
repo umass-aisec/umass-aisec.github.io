@@ -1,24 +1,12 @@
+import json
 import pandas as pd
 import urllib.parse
 import requests
 
 from rapidfuzz import fuzz
 
-must_have_authors = [
-    # Current students
-    "Dzung Pham",
-    "Ali Naseh",
-    "Yuefeng Peng",
-    "Jaechul Roh",
-    "Hyejun Jeong",
-    "Mohammadreza Teymoorianfard",
-    "Arisa Tajima",
-    "Abhinav Kumar",
-    # Alumni
-    "Hamid Mozaffari",
-    "Milad Nasr",
-    "Virat Shejwalkar",
-]
+with open("../assets/data/people.json", "r") as f:
+    must_have_authors = [p["name"] for p in json.load(f)]
 
 # Construct SPARQL for https://sparql.dblp.org/
 profs = {
@@ -126,5 +114,4 @@ df = pd.concat([non_arxiv_rows, arxiv_to_keep], ignore_index=True)
 # Final sort
 df = df.sort_values(by=["year", "venue"], ascending=[False, False])
 
-# df.to_csv("./pubs.csv", index=False)
-df.to_json("./pubs.json", orient="records", indent=4)
+df.to_json("../assets/data/pubs.json", orient="records", indent=4)

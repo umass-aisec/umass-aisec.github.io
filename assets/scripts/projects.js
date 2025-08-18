@@ -1,5 +1,5 @@
 (async () => {
-    const pubs = await fetch("/publications/pubs.json");
+    const pubs = await fetch("/assets/data/pubs.json");
     const pubs_json = await pubs.json();
 
     const current_year = new Date().getFullYear();
