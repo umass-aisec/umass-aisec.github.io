@@ -134,6 +134,7 @@
     "S25": [
         {
             "date": "Mon, Feb 03",
+            "date2": "2025/02/03",
             "name": "Anshuman Suri",
             "affiliation": "Northeastern University",
             "link": "https://www.anshumansuri.com/",
@@ -143,6 +144,7 @@
         },
         {
             "date": "Mon, Feb 10",
+            "date2": "2025/02/10",
             "name": "Sahar Abdelnabi",
             "affiliation": "Microsoft",
             "link": "https://s-abdelnabi.github.io/",
@@ -152,6 +154,7 @@
         },
         {
             "date": "Thu, Feb 20",
+            "date2": "2025/02/20",
             "name": "Javier Rando",
             "affiliation": "ETH Zurich",
             "link": "https://javirando.com/",
@@ -161,6 +164,7 @@
         },
         {
             "date": "Mon, Feb 24",
+            "date2": "2025/02/24",
             "name": "Norman Mu",
             "affiliation": "xAI",
             "link": "https://www.normanmu.com/",
@@ -170,6 +174,7 @@
         },
         {
             "date": "Mon, Mar 03",
+            "date2": "2025/03/03",
             "name": "Harsh Chaudhari",
             "affiliation": "Northeastern University",
             "link": "https://harshch1803.github.io/",
@@ -179,6 +184,7 @@
         },
         {
             "date": "Mon, Mar 10",
+            "date2": "2025/03/10",
             "name": "Andy Zou",
             "affiliation": "Carnegie Mellon Univerosity",
             "link": "https://andyzoujm.github.io/",
@@ -188,6 +194,7 @@
         },
         {
             "date": "Mon, Mar 24",
+            "date2": "2025/03/24",
             "name": "Xiangyu Qi",
             "affiliation": "OpenAI",
             "link": "https://xiangyuqi.com/",
@@ -197,6 +204,7 @@
         },
         {
             "date": "Mon, Mar 31",
+            "date2": "2025/03/31",
             "name": "Om Thakkar",
             "affiliation": "OpenAI",
             "link": "http://www.omthakkar.com/",
@@ -206,6 +214,7 @@
         },
         {
             "date": "Mon, Apr 07",
+            "date2": "2025/04/07",
             "name": "Ryan McKenna",
             "affiliation": "Google",
             "link": "http://linkedin.com/in/ryan-mckenna-76772a57",
@@ -215,6 +224,7 @@
         },
         {
             "date": "Mon, Apr 14",
+            "date2": "2025/04/14",
             "name": "Milad Nasr",
             "affiliation": "Google",
             "link": "https://www.linkedin.com/in/milad-nasr-50ab6a56",
@@ -224,6 +234,7 @@
         },
         {
             "date": "Fri, Apr 18",
+            "date2": "2025/04/18",
             "name": "Edoardo Debenedetti",
             "affiliation": "ETH Zurich",
             "link": "https://edoardo.science/",
@@ -233,6 +244,7 @@
         },
         {
             "date": "Mon, Apr 28",
+            "date2": "2025/04/28",
             "name": "Jonas Geiping",
             "affiliation": "ELLIS Institute",
             "link": "https://jonasgeiping.github.io/",
@@ -242,6 +254,7 @@
         },
         {
             "date": "Mon, May 05",
+            "date2": "2025/05/05",
             "name": "PhD Students",
             "affiliation": "UMass Amherst",
             "link": "#",

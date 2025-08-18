@@ -6,6 +6,16 @@
     function renderRoster(semester) {
         const roster = speaker_data[semester] || [];
         const nodes = [];
+        let closest_date = null;
+
+        if (semester == current_semester) {
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            closest_date = roster
+                .map(speaker => new Date(speaker.date2))
+                .filter(date => date >= today)
+                .sort((a, b) => a - b)[0];
+        }
 
         for (let i = 0; i < roster.length; ++i) {
             const speaker = roster[i];
@@ -13,9 +23,9 @@
             const speaker_info = speaker.name != null
                 ? `<a target="_blank" href="${speaker.link ?? '#'}">${speaker.name ?? 'Speaker TBD'}</a> (${speaker.affiliation ?? 'TBD'}): ${speaker.title ?? 'Topic TBD'}`
                 : "TBD";
-
+            const highlight_class = closest_date != null && (new Date(speaker.date2)).getTime() == closest_date.getTime() ? "bg-warning" : "";
             const li = fromHTML(`
-        <li class="list-group-item d-flex flex-column flex-md-row align-items-center align-items-md-center">
+        <li class="list-group-item d-flex flex-column flex-md-row align-items-center align-items-md-center ${highlight_class}">
             <span class="badge bg-primary me-md-2 mx-auto mb-2 mb-md-0 mx-md-0">Week ${week_num}: ${speaker.date}</span>
             <span class="topic">
             ${speaker_info}
