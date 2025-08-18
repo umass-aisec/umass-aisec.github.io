@@ -3,26 +3,32 @@
     const pubs_json = await pubs.json();
 
     const current_year = new Date().getFullYear();
-    const pubs_html = [];
 
-    // pubs_html.push(fromHTML("<h5>Preprints</h5>"));
-    // pubs_html.push(...pubs_json.filter(p => p.year >= current_year - 2 && p.venue == "arXiv").map (p => fromHTML(
-    //     `<div class="mb-3">
-    //         <a target="_blank" href="${p.pub}">${p.title}</a>
-    //         <span><strong>${p.venue} ${p.year}</strong>.</span>
-    //         <span>${p.coAuthorName}.</span>
-    //     </div>`
-    // )));
+    function renderPublications() {
+        const show_all = document.getElementById("show_all").checked;
+        const pubs_html = [];
+        const pubs = show_all
+            ? pubs_json
+            : pubs_json.filter(p => p.venue != "arXiv");
+        const min_year = show_all ? 0 : current_year - 4;
 
-    for (let year = current_year; year >= current_year - 4; --year) {
-        pubs_html.push(fromHTML(`<h5>${year}</h5>`));
-        pubs_html.push(...pubs_json.filter(p => p.year == year && p.venue != "arXiv").map(p => fromHTML(
-            `<div class="mb-3">
-                <a target="_blank" href="${p.pub}">${p.title}</a>
-                <span><strong>${p.venue}</strong>.</span>
-                <span>${p.coAuthorName}.</span>
-            </div>`
-        )));
+        for (let year = current_year; year >= min_year; --year) {
+            const filtered_pubs = pubs.filter(p => p.year == year);
+            if (filtered_pubs.length == 0) {
+                break;
+            }
+            pubs_html.push(fromHTML(`<h5>${year}</h5>`));
+            pubs_html.push(...filtered_pubs.map(p => fromHTML(
+                `<div class="mb-3">
+                    <a target="_blank" href="${p.pub}">${p.title}</a>
+                    <span><strong>${p.venue}</strong>.</span>
+                    <span>${p.coAuthorName}.</span>
+                </div>`
+            )));
+        }
+        document.getElementById("publications").replaceChildren(...pubs_html);
     }
-    document.getElementById("publications").replaceChildren(...pubs_html);
+
+    renderPublications();
+    document.getElementById("show_all").onchange = renderPublications;
 })();
