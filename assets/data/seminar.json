@@ -33,9 +33,9 @@
         {
             "date": "Mon, Sep 29",
             "date2": "2025/09/29",
-            "name": null,
-            "affiliation": null,
-            "link": null,
+            "name": "Arman Zharmagambetov",
+            "affiliation": "Meta FAIR",
+            "link": "https://arman-z.github.io/",
             "title": null,
             "abstract": null,
             "bio": null
@@ -43,9 +43,9 @@
         {
             "date": "Mon, Oct 06",
             "date2": "2025/10/06",
-            "name": null,
-            "affiliation": null,
-            "link": null,
+            "name": "Madiha Z. Choksi",
+            "affiliation": "Cornell Tech",
+            "link": "https://madihaz.com/",
             "title": null,
             "abstract": null,
             "bio": null
@@ -53,9 +53,9 @@
         {
             "date": "Mon, Oct 20",
             "date2": "2025/10/20",
-            "name": null,
-            "affiliation": null,
-            "link": null,
+            "name": "Rebecca Portnoff",
+            "affiliation": "Thorn",
+            "link": "https://rebeccasportnoff.com/",
             "title": null,
             "abstract": null,
             "bio": null
@@ -63,9 +63,9 @@
         {
             "date": "Mon, Oct 27",
             "date2": "2025/10/27",
-            "name": null,
-            "affiliation": null,
-            "link": null,
+            "name": "Tingwei Zhang",
+            "affiliation": "Cornell University",
+            "link": "https://ztingwei.com/",
             "title": null,
             "abstract": null,
             "bio": null
@@ -83,9 +83,9 @@
         {
             "date": "Mon, Nov 10",
             "date2": "2025/11/10",
-            "name": null,
-            "affiliation": null,
-            "link": null,
+            "name": "Saeed Mahloujifar",
+            "affiliation": "Meta FAIR",
+            "link": "https://smahloujifar.github.io/",
             "title": null,
             "abstract": null,
             "bio": null
@@ -93,9 +93,9 @@
         {
             "date": "Mon, Nov 17",
             "date2": "2025/11/17",
-            "name": null,
-            "affiliation": null,
-            "link": null,
+            "name": "Matthew Wright",
+            "affiliation": "Rochester Institute of Technology",
+            "link": "https://sites.google.com/site/matthewkwright/",
             "title": null,
             "abstract": null,
             "bio": null
@@ -103,9 +103,9 @@
         {
             "date": "Mon, Nov 24",
             "date2": "2025/11/24",
-            "name": null,
-            "affiliation": null,
-            "link": null,
+            "name": "Ali Naseh",
+            "affiliation": "UMass Amherst",
+            "link": "https://ali7naseh.github.io/",
             "title": null,
             "abstract": null,
             "bio": null
