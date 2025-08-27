@@ -1,5 +1,3 @@
-document.getElementById('year').textContent = new Date().getFullYear();
-
 function fromHTML(html, trim = true) {
     // Process the HTML string.
     html = trim ? html.trim() : html;
@@ -15,3 +13,16 @@ function fromHTML(html, trim = true) {
     if (result.length === 1) return result[0];
     return result;
 }
+
+document.getElementById("footer").replaceChildren(
+    fromHTML(`
+        <footer class="pt-5">
+            <div class="container text-center">
+                <p class="text-muted">© <span>${new Date().getFullYear()}</span> <span class="umass">UMass Amherst</span> AI Security
+                <br>
+                <a class="email" href="mailto:aisec.umass@gmail.com">&#9993; aisec.umass@gmail.com</a>
+                </p>
+            </div>
+        </footer>
+    `)
+);
