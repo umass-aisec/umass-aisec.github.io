@@ -13,9 +13,9 @@
         {
             "date": "Mon, Sep 15",
             "date2": "2025/09/15",
-            "name": null,
-            "affiliation": null,
-            "link": null,
+            "name": "Benjamin Laufer",
+            "affiliation": "Cornell Tech",
+            "link": "https://bendlaufer.github.io/index.html",
             "title": null,
             "abstract": null,
             "bio": null
@@ -23,9 +23,9 @@
         {
             "date": "Mon, Sep 22",
             "date2": "2025/09/22",
-            "name": null,
-            "affiliation": null,
-            "link": null,
+            "name": "Ambra Demontis",
+            "affiliation": "University of Cagliari",
+            "link": "https://sites.unica.it/pralab/people/ambra-demontis/",
             "title": null,
             "abstract": null,
             "bio": null
