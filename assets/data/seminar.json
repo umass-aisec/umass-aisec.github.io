@@ -73,9 +73,9 @@
         {
             "date": "Mon, Nov 03",
             "date2": "2025/11/03",
-            "name": null,
-            "affiliation": null,
-            "link": null,
+            "name": "Kathrin Grosse",
+            "affiliation": "IBM Research",
+            "link": "https://research.ibm.com/people/kathrin-grosse",
             "title": null,
             "abstract": null,
             "bio": null
