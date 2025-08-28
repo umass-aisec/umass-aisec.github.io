@@ -33,14 +33,14 @@ document.getElementById("header").replaceChildren(
                 <li class="nav-item">
                     <a href="/projects" class="nav-link px-2">Projects</a>
                 </li>
-                <!-- <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle px-2" href="#" id="demoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Demo
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="demoDropdown">
                         <li><a class="dropdown-item" href="/demo/throttling_agent_demo/">Web Agent Throttling</a></li>
                     </ul>
-                </li> -->
+                </li>
             </ul>
         </header>
     `)
