@@ -14,6 +14,64 @@ function fromHTML(html, trim = true) {
     return result;
 }
 
+document.getElementById("header").replaceChildren(
+    fromHTML(`
+        <header class="d-flex flex-column flex-md-row align-items-center justify-content-between py-3 mb-4 border-bottom">
+            <a href="/"
+                class="d-flex align-items-center mb-2 mb-md-0 link-body-emphasis text-decoration-none">
+                <img id="logo" class="me-2" src="/assets/images/UMass AISec Logo.svg">
+                <span class="fs-4 text-center text-md-start"><span class="umass">UMass Amherst</span> AI Security Group</span>
+            </a>
+
+            <ul class="nav justify-content-center mt-0 mt-md-0 mb-0">
+                <li class="nav-item">
+                    <a href="/" class="nav-link px-2">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/seminar" class="nav-link px-2">Seminar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/projects" class="nav-link px-2">Projects</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-2" href="#" id="demoDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Demo
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="demoDropdown">
+                        <li><a class="dropdown-item" href="/demo/throttling_agent_demo/">Web Agent Throttling</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </header>
+    `)
+);
+
+function normalizeLinkPath(path) {
+    if (path.endsWith("/index.html")) {
+        path = path.replace("index.html", "");
+    }
+    if (path.length > 1 && path.endsWith("/")) {
+        path = path.slice(0, -1);
+    }
+    return path;
+}
+
+// Automatically add .active to the right nav menu item
+const currentPath = normalizeLinkPath(window.location.pathname);
+const navLinks = document.querySelectorAll(".nav-link, .dropdown-item");
+for (link of navLinks) {
+    // Compare the link's pathname with the current URL path
+    const linkPath = normalizeLinkPath(link.getAttribute("href"));
+    if (linkPath === currentPath) {
+        link.classList.add("active");
+        const dropdown = link.closest(".dropdown");
+        if (dropdown) {
+            dropdown.querySelector(".dropdown-toggle").classList.add("active");
+        }
+        break;
+    }
+}
+
 document.getElementById("footer").replaceChildren(
     fromHTML(`
         <footer class="pt-5">
