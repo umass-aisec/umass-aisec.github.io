@@ -38,7 +38,7 @@ document.getElementById("header").replaceChildren(
                         Demo
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="demoDropdown">
-                        <li><a class="dropdown-item" href="/demo/throttling_agent_demo/">Web Agent Throttling</a></li>
+                        <li><a class="dropdown-item" href="./demo/throttling_agent_demo/">Web Agent Throttling</a></li>
                     </ul>
                 </li>
             </ul>
