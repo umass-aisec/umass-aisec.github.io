@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZLN17ZEB1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TZLN17ZEB1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+    <title>Bob's Confetti: Phonetic Memorization Attacks - UMass AI Security</title>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Noto Sans Mono' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="../../assets/css/custom.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        .changed { color: #e74c3c; font-weight: bold; }
+        .model-tag { font-size: 0.75rem; font-style: italic; color: #888; text-align: center; margin-top: 0.25rem; }
+        .model-yue { color: #ea9412; font-weight: bold; }
+        .model-suno { color: #1e90ff; font-weight: bold; }
+        .transformation-badge { background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 4px; padding: 0.2rem 0.5rem; margin: 0.2rem; font-size: 0.85rem; display: inline-block; }
+    </style>
+</head>
+
+<body>
+    <div id="header" class="container"></div>
+
+    <div class="container body-container d-flex flex-column justify-content-start align-items-center py-2">
+        <div class="col-12 col-md-10 col-lg-8">
+            <div class="mb-4 text-center">
+                <h3 class="fw-bold">Bob's Confetti: Phonetic Memorization Attacks in Music and Video Generation</h3>
+                <div class="text-muted mb-2">
+                    <a href="https://jrohsc.github.io/" target="_blank" class="text-decoration-none">Jaechul Roh</a><sup>1*</sup>,
+                    <a href="https://zacharynovack.github.io/" target="_blank" class="text-decoration-none">Zachary Novack</a><sup>2*</sup>,
+                    <a href="https://bujuef.github.io/" target="_blank" class="text-decoration-none">Yuefeng Peng</a><sup>1</sup>,
+                    <a href="https://mireshghallah.github.io/" target="_blank" class="text-decoration-none">Niloofar Mireshghallah</a><sup>3</sup>,
+                    <a href="https://cseweb.ucsd.edu/~tberg/" target="_blank" class="text-decoration-none">Taylor Berg-Kirkpatrick</a><sup>2</sup>,
+                    <a href="https://people.cs.umass.edu/~amir/" target="_blank" class="text-decoration-none">Amir Houmansadr</a><sup>1</sup>
+                </div>
+                <div class="text-muted small mb-3">
+                    <div><sup>1</sup>University of Massachusetts Amherst</div>
+                    <div><sup>2</sup>University of California San Diego</div>
+                    <div><sup>3</sup>Carnegie Mellon University</div>
+                    <div class="mt-1"><small><sup>*</sup>Equal Contribution</small></div>
+                </div>
+                
+                <!-- Content Warning -->
+                <div class="alert alert-warning" role="alert">
+                    <strong>⚠️ Content Disclaimer</strong><br>
+                    <small><em>This research demonstration contains AI-generated audio and lyrics that may include strong language or potentially offensive content. The generated materials are used for academic research purposes to study memorization in AI music generation models. Viewer discretion is advised.</em></small>
+                </div>
+
+                <!-- Links -->
+                <div class="d-flex justify-content-center flex-wrap gap-2 mb-4">
+                    <a href="https://arxiv.org/pdf/2507.17937" target="_blank" class="btn btn-dark btn-sm">
+                        <i class="fas fa-file-pdf"></i> Paper
+                    </a>
+                    <a href="https://arxiv.org/abs/2507.17937" target="_blank" class="btn btn-dark btn-sm">
+                        <i class="fas fa-archive"></i> arXiv
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=MswaaYUPUgc&ab_channel=JRoh" target="_blank" class="btn btn-dark btn-sm">
+                        <i class="fab fa-youtube"></i> Demo Video
+                    </a>
+                </div>
+            </div>
+
+            <!-- Abstract -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-3">Abstract</h4>
+                    <p class="text-justify">
+                        Lyrics-to-Song (L2S) generation models promise end-to-end music synthesis from text, but their vulnerability to copyright leakage remains underexplored. To mitigate this risk, commercial systems typically block prompts containing copyrighted lyrics. In this work, we introduce Adversarial PhoneTic Prompting (APT), an attack that replaces iconic phrases with homophonic alternatives—e.g., "mom's spaghetti" becomes "Bob's confetti"—preserving the acoustic form while bypassing copyright filters.
+                    </p>
+                    <p class="text-justify">
+                        We reveal that models can be prompted to regurgitate memorized songs using phonetically similar but semantically unrelated lyrics. Despite the semantic drift, black-box models like SUNO and open-source models like YuE generate outputs that are strikingly similar to the original songs—melodically, rhythmically, and vocally—achieving high scores on CLAP, AudioJudge, and CoverID. These effects persist across genres and languages.
+                    </p>
+                    <p class="text-justify">
+                        More surprisingly, we find that phonetic prompts alone can trigger visual memorization in text-to-video models: when given altered lyrics from Lose Yourself, Veo~3 generates scenes that mirror the original music video—complete with a hooded rapper and dim urban settings—despite no explicit visual cues in the prompt.
+                    </p>
+                    <p class="text-justify">
+                        <strong>Key Findings:</strong> Through systematic testing with phoneme modifications (like <em>"mom's spaghetti"</em> → <em>"Bob's confetti"</em>), we demonstrate that AI music models exhibit significant memorization, raising important questions about copyright safety in generative music systems.
+                    </p>
+
+                    <!-- Framework Image -->
+                    <div class="text-center mt-4">
+                        <img src="static/images/figure_1.png" alt="APT Attack Overview" 
+                             class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video Demo Section -->
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Aligned Video Demo</title>
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+                <style>
+                    .video-container {
+                        position: relative;
+                        background-color: #000;
+                    }
+                    
+                    .video-container video {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover; /* This ensures videos fill the container uniformly */
+                    }
+                    
+                    /* Alternative: use object-fit: contain to show full video without cropping */
+                    .video-container.contain video {
+                        object-fit: contain;
+                    }
+                    
+                    /* Ensure consistent heights across all video containers */
+                    .equal-height .ratio {
+                        min-height: 200px; /* Adjust as needed */
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="container mt-4">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-body">
+                            <h4 class="card-title text-center mb-4">Lose Yourself - Veo 3 Video Generation Demo</h4>
+                            <p class="text-center text-muted mb-4">
+                                Demonstration showing how phonetic modifications can trigger visual memorization in text-to-video models.
+                            </p>
+                            
+
+                            <!-- Option 2: Alternative with contain (shows full video) -->
+                            <div class="row equal-height">
+                                <div class="col-md-4 mb-3">
+                                    <h6 class="text-center mb-2">Original Music Video</h6>
+                                    <div class="ratio ratio-16x9 video-container contain">
+                                        <video controls class="rounded">
+                                            <source src="static/videos/Eminem - Lose Yourself (online-video-cutter.com).mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <h6 class="text-center mb-2">Original Lyrics</h6>
+                                    <div class="ratio ratio-16x9 video-container contain">
+                                        <video controls class="rounded">
+                                            <source src="static/videos/Lose_Yourself_original.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <h6 class="text-center mb-2">Phoneme Modified Lyrics</h6>
+                                    <div class="ratio ratio-16x9 video-container contain">
+                                        <video controls class="rounded">
+                                            <source src="static/videos/Lose_Yourself_parody.mp4" type="video/mp4">
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-5">
+
+                            <!-- Option 3: Fixed height approach -->
+                            
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Rap Phoneme Variants -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-4">🎤 Rap Phoneme Variants</h4>
+                    <p class="text-center text-muted mb-4">Hip-hop tracks with phonetic modifications. Key transformations preserve rhythm while changing lyrics.</p>
+                    
+                    <!-- DNA/BMA -->
+                    <div class="mb-4">
+                        <h5>DNA → BMA (Kendrick Lamar)</h5>
+                        <div class="mb-2">
+                            <span class="transformation-badge">"DNA" → <span class="changed">"BMA"</span></span>
+                            <span class="transformation-badge">"loyalty" → <span class="changed">"gravy"</span></span>
+                            <span class="transformation-badge">"power" → <span class="changed">"waffle"</span></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Original</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/DNA/original/DNA_original.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Modified - "DNA" → "BMA"</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/DNA/generated/phoneme_BMA (rap)_v1.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Genre: "rap"</div>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Modified - Version 2</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/DNA/generated/phoneme_BMA (rap)_v2.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Genre: "rap"</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lose Yourself -->
+                    <div class="mb-4">
+                        <h5>Lose Yourself (Eminem)</h5>
+                        <div class="mb-2">
+                            <span class="transformation-badge">"knees weak" → <span class="changed">"cheese weak"</span></span>
+                            <span class="transformation-badge">"mom's spaghetti" → <span class="changed">"Bob's confetti"</span></span>
+                            <span class="transformation-badge">"calm and ready" → <span class="changed">"clam and ready"</span></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Original</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Phoneme/original/Lose Yourself.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Modified - <span class="model-suno">SUNO</span></small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Phoneme/generated/Lose Yourself.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Genre: N/A</div>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Modified - Intense</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Phoneme/generated/Lose Yourself (intense rap).mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Genre: "intense rap"</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HUMBLE -->
+                    <div class="mb-4">
+                        <h5>HUMBLE. (Kendrick Lamar)</h5>
+                        <div class="mb-2">
+                            <span class="transformation-badge">"sit down" → <span class="changed">"sick down"</span></span>
+                            <span class="transformation-badge">"be humble" → <span class="changed">"be humgle"</span></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Original</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/HUMBLE/original/HUMBLE.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Modified - Version 1</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/HUMBLE/generated/HUMBLE_generated_1.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Genre: "trap gangsta"</div>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Modified - Version 2</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/HUMBLE/generated/HUMBLE_generated_2.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Genre: "rap gangsta"</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pop Phoneme Variants -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-4">🎭 Pop Phoneme Variants</h4>
+                    <p class="text-center text-muted mb-4">Pop songs with phonetic modifications across different languages.</p>
+                    
+                    <!-- APT -->
+                    <div class="mb-4">
+                        <h5>APT (ROSÉ & Bruno Mars)</h5>
+                        <div class="mb-2">
+                            <span class="transformation-badge">"아파트" → <span class="changed">"하파트"</span></span>
+                            <span class="transformation-badge">"Pretty face" → <span class="changed">"Fishy face"</span></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Original</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/APT/original/APT_original.wav" type="audio/wav">
+                                </audio>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Modified - Version 1</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/APT/generated/APT (female punk rock)_1.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Genre: "female punk rock"</div>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Modified - Version 2</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/APT/generated/APT (female punk rock)_2.wav" type="audio/wav">
+                                </audio>
+                                <div class="model-tag">Genre: "female punk rock"</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Gentlemen -->
+                    <div class="mb-4">
+                        <h5>Gentlemen (PSY)</h5>
+                        <div class="mb-2">
+                            <span class="transformation-badge">"mother father" → <span class="changed">"bother gather"</span></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <small class="text-muted">Original</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Gentlemen/original/Gentlemen_original.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <small class="text-muted">Modified - Phonetic variations</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Gentlemen/generated/Gentlemen_generated.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Genre: "dance"</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Let It Be -->
+                    <div class="mb-4">
+                        <h5>Let It Be (The Beatles)</h5>
+                        <div class="mb-2">
+                            <span class="transformation-badge">"let it be" → <span class="changed">"get it free"</span></span>
+                            <span class="transformation-badge">"mother mary" → <span class="changed">"other fairy"</span></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Original</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Phoneme/original/Let it Be.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Modified - <span class="model-yue">YuE</span></small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Phoneme/generated/Let It Be_The Beatles_pop-comforting-male-gentle-vocal-piano-ballad-soothing-warm-melodic-vocal_tp0@93_T1@0_rp1@1_maxtk8000_99245684-2085-4d52-befa-81b5fa9f7569_mixed.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag"><span class="model-yue">YuE</span> Version</div>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Modified - <span class="model-suno">SUNO</span></small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Phoneme/generated/Let it Be.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag"><span class="model-suno">SUNO</span> Version</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 月亮代表我的心 -->
+                    <div class="mb-4">
+                        <h5>月亮代表我的心 (Teresa Teng)</h5>
+                        <div class="mb-2">
+                            <span class="transformation-badge">"我的情也真" → <span class="changed">"我的情不移"</span></span>
+                            <span class="transformation-badge">"我的爱也真" → <span class="changed">"我的爱不变"</span></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <small class="text-muted">Original</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Phoneme/original/月亮代表我的心.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <small class="text-muted">Modified - <span class="model-yue">YuE</span></small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Phoneme/generated/月亮代表我的心_Teresa Teng__tp0@93_T1@0_rp1@1_maxtk8000_eced0844-ca95-4b84-be6a-b5985a99279f_mixed.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Generated using <span class="model-yue">YuE</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Christmas Phoneme Variants -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-4">🎄 Christmas Phoneme Variants</h4>
+                    <p class="text-center text-muted mb-4">Jingle Bells transformed through phonetic modifications.</p>
+                    
+                    <!-- Jingle Bell Videos -->
+                    <div class="mb-4">
+                        <h5>Jingle Bell Video Comparison</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <h6 class="text-center">Original Lyrics</h6>
+                                <div class="ratio ratio-16x9">
+                                    <video controls class="rounded">
+                                        <source src="static/videos/Jingle Bell (AVT).mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <h6 class="text-center">Phoneme-Modified Lyrics</h6>
+                                <div class="ratio ratio-16x9">
+                                    <video controls class="rounded">
+                                        <source src="static/videos/Jingle Bell (Flashing).mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jingle Bell Audio Variants -->
+                    <div class="mb-4">
+                        <h5>Jingle Bell Audio Variants</h5>
+                        <div class="mb-2">
+                            <span class="transformation-badge">"jingle" → <span class="changed">"giggle"</span></span>
+                            <span class="transformation-badge">"bells" → <span class="changed">"shells"</span></span>
+                            <span class="transformation-badge">"dashing" → <span class="changed">"flashing"</span></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Original Jingle Bells</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Christmas Phoneme/original/Jingle Bells Original.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Giggle Shell Version 1</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Christmas Phoneme/generated/Giggle Shell (christmas style) 1.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Christmas style</div>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Giggle Shell Version 2</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Christmas Phoneme/generated/Giggle Shell (christmas style) 2.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Christmas style</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Jingle Bell Rock -->
+                    <div class="mb-4">
+                        <h5>Jingle Bell Rock → Giggle Shell Sock</h5>
+                        <div class="mb-2">
+                            <span class="transformation-badge">"jingle bell rock" → <span class="changed">"giggle shell sock"</span></span>
+                            <span class="transformation-badge">"time" → <span class="changed">"mime"</span></span>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Original</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Christmas Phoneme/original/Bobby Helms - Jingle Bell Rock.mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Modified - Version 1</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Christmas Phoneme/generated/Giggle Shell sock (christmas style) 7.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Christmas style</div>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <small class="text-muted">Modified - Version 2</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Christmas Phoneme/generated/Giggle Shell sock (christmas style) 8.mp3" type="audio/mpeg">
+                                </audio>
+                                <div class="model-tag">Christmas style</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- English Songs Section -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-4">🎵 English (Billboard) Songs</h4>
+                    <p class="text-center text-muted mb-4">Classic English songs regenerated with genre modifications.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <h6>Billie Jean (Michael Jackson)</h6>
+                            <small class="text-muted">Original</small>
+                            <audio controls class="w-100 mb-2">
+                                <source src="static/audio/English/original/Billie Jean.mp3" type="audio/mpeg">
+                            </audio>
+                            <small class="text-muted">Generated - Inspiring female uplifting pop</small>
+                            <audio controls class="w-100">
+                                <source src="static/audio/English/generated/Billie Jean (inspiring female uplifting pop airy vocal electronic bright vocal vocal).mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <h6>Thinking Out Loud (Ed Sheeran)</h6>
+                            <small class="text-muted">Original</small>
+                            <audio controls class="w-100 mb-2">
+                                <source src="static/audio/English/original/Thinking Out Loud - Extracted.mp3" type="audio/mpeg">
+                            </audio>
+                            <small class="text-muted">Generated - Male romantic guitar ballad</small>
+                            <audio controls class="w-100">
+                                <source src="static/audio/English/generated/Thinking Out Loud (Male-romantic-vocal-guitar-ballad-with-piano-melody).mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <h6>Empire State of Mind</h6>
+                            <small class="text-muted">Original</small>
+                            <audio controls class="w-100 mb-2">
+                                <source src="static/audio/English/original/Empire State of Mind.mp3" type="audio/mpeg">
+                            </audio>
+                            <small class="text-muted">Generated - Inspiring female pop</small>
+                            <audio controls class="w-100">
+                                <source src="static/audio/English/generated/Empire State of Mind (inspiring female uplifting pop airy vocal electronic bright vocal vocal).mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mandarin & Cantonese Songs Section -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-4">🇨🇳 Mandarin & Cantonese Songs</h4>
+                    <p class="text-center text-muted mb-4">Chinese language songs demonstrating cross-linguistic memorization.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h6>甜蜜蜜 (Teresa Teng)</h6>
+                            <small class="text-muted">Original</small>
+                            <audio controls class="w-100 mb-2">
+                                <source src="static/audio/Mandarin/original/甜蜜蜜-extracted.mp3" type="audio/mpeg">
+                            </audio>
+                            <small class="text-muted">Generated</small>
+                            <audio controls class="w-100">
+                                <source src="static/audio/Mandarin/generated/甜蜜蜜 (Teresa Teng) (N:A).mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        
+                        <div class="col-md-6 mb-4">
+                            <h6>光辉岁月 (Beyond)</h6>
+                            <small class="text-muted">Original</small>
+                            <audio controls class="w-100 mb-2">
+                                <source src="static/audio/Cantonese/original/光辉岁月 (The Glorious Years)_Beyond.mp3" type="audio/mpeg">
+                            </audio>
+                            <small class="text-muted">Generated - Rock nostalgic Cantonese</small>
+                            <audio controls class="w-100">
+                                <source src="static/audio/Cantonese/generated/光辉岁月 (The Glorious Years) (rock-nostalgic-male-electric-guitar-emotional-Cantonese-rich-vocal).mp3" type="audio/mpeg">
+                            </audio>
+                        </div>
+                    </div>
+
+                    <!-- 后来 Multiple Versions -->
+                    <div class="mb-4">
+                        <h5>后来 (Hòu Lái) - Rene Liu (Multiple Genre Variants)</h5>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <small class="text-muted">Original</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Mandarin/original/后来 (Rene Liu).mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <small class="text-muted">Generated - Female nostalgic ballad</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Mandarin/generated/后来 (Female-nostalgic-vocal-ballad-with-gentle-piano-and-strings).mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <small class="text-muted">Generated - Uplifting pop</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Mandarin/generated/后来 (inspiring-female-uplifting-pop-airy-vocal-electronic-bright-vocal).mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <small class="text-muted">Generated - Pop ballad guitar</small>
+                                <audio controls class="w-100">
+                                    <source src="static/audio/Mandarin/generated/后来 (pop-ballad-guitar-nostalgic-female-bittersweet-vocal-reflective).mp3" type="audio/mpeg">
+                                </audio>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Citation Section -->
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title text-center mb-4">BibTeX</h4>
+                    <pre class="bg-light p-3 rounded"><code>@article{roh2025bob,
+  title={Bob's Confetti: Phonetic Memorization Attacks in Music and Video Generation},
+  author={Roh, Jaechul and Novack, Zachary and Peng, Yuefeng and Mireshghallah, Niloofar and Berg-Kirkpatrick, Taylor and Houmansadr, Amir},
+  journal={arXiv preprint arXiv:2507.17937},
+  year={2025}
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../../assets/scripts/common.js"></script>
+</body>
+
+</html>
