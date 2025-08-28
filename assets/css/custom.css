@@ -106,3 +106,8 @@ a:hover {
         width: auto;
     }
 }
+
+#publications .bg-primary {
+    background-color: #971B2F !important;
+    padding: 0.25em;
+}

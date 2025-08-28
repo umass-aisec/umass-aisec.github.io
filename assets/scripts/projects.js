@@ -21,8 +21,8 @@
             pubs_html.push(...filtered_pubs.map(p => fromHTML(
                 `<div class="mb-3">
                     <a target="_blank" href="${p.pub}">${p.title}</a>
-                    <span><strong>${p.venue}</strong>.</span>
                     <span>${p.coAuthorName}.</span>
+                    <span class="bg-primary badge">${p.venue}</span>
                 </div>`
             )));
         }
