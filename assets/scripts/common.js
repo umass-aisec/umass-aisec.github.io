@@ -42,13 +42,11 @@ document.getElementById("header").replaceChildren(
 );
 
 function normalizeLinkPath(path) {
-    if (path.endsWith("/index.html")) {
-        path = path.replace("index.html", "");
+    let last_idx = 1;
+    while (last_idx < path.length && path[last_idx] != "/") {
+        last_idx++;
     }
-    if (path.length > 1 && path.endsWith("/")) {
-        path = path.slice(0, -1);
-    }
-    return path;
+    return path.slice(0, last_idx);
 }
 
 // Automatically add .active to the right nav menu item
@@ -59,10 +57,6 @@ for (link of navLinks) {
     const linkPath = normalizeLinkPath(link.getAttribute("href"));
     if (linkPath === currentPath) {
         link.classList.add("active");
-        const dropdown = link.closest(".dropdown");
-        if (dropdown) {
-            dropdown.querySelector(".dropdown-toggle").classList.add("active");
-        }
         break;
     }
 }
