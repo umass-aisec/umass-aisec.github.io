@@ -73,7 +73,7 @@ document.getElementById("footer").replaceChildren(
             <div class="container text-center">
                 <p class="text-muted">© <span>${new Date().getFullYear()}</span> <span class="umass">UMass Amherst</span> AI Security
                 <br>
-                <a class="email" href="mailto:aisec.umass@gmail.com">&#9993; aisec.umass@gmail.com</a>
+                <a class="email" href="mailto:aisec@cs.umass.edu">&#9993; aisec@cs.umass.edu</a>
                 </p>
             </div>
         </footer>
