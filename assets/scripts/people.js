@@ -19,5 +19,5 @@
     }
 
     fillPeopleData("students", student_data.filter(s => !s.alumnus));
-    fillPeopleData("alumni", student_data.filter(s => s.alumnus));
+    // fillPeopleData("alumni", student_data.filter(s => s.alumnus));
 })()
