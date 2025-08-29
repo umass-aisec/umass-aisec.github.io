@@ -46,23 +46,5 @@
         "link": "https://www.securegradients.com/",
         "img": "abhinav.jpg",
         "alumnus": false
-    },
-    {
-        "name": "Virat Shejwalkar",
-        "link": "https://people.cs.umass.edu/~vshejwalkar/",
-        "img": "virat.jpg",
-        "alumnus": true
-    },
-    {
-        "name": "Hamid Mozaffari",
-        "link": "https://hamidmozaffari.github.io/",
-        "img": "hamid.jpg",
-        "alumnus": true
-    },
-    {
-        "name": "Milad Nasr",
-        "link": "https://www.linkedin.com/in/milad-nasr-50ab6a56/",
-        "img": "milad.jfif",
-        "alumnus": true
     }
 ]
