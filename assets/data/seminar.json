@@ -113,9 +113,9 @@
         {
             "date": "Mon, Dec 01",
             "date2": "2025/12/01",
-            "name": null,
-            "affiliation": null,
-            "link": null,
+            "name": "Cassidy Gibson",
+            "affiliation": "University of Florida",
+            "link": "https://www.linkedin.com/in/cassidy-gibson-409a422b6/",
             "title": null,
             "abstract": null,
             "bio": null
