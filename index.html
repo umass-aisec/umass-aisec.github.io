@@ -195,6 +195,107 @@
             background: radial-gradient(circle, rgba(255, 199, 44, 0.1) 0%, transparent 70%);
             animation: float 4s ease-in-out infinite;
         }
+
+        .expertise-card {
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid rgba(136, 28, 28, 0.08);
+            transition: all 0.4s ease;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .expertise-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-8px) scale(1.02);
+            border-color: var(--umass-maroon);
+        }
+
+        .expertise-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 199, 44, 0.1), transparent);
+            transition: left 0.6s ease;
+            z-index: 1;
+        }
+
+        .expertise-card:hover::before {
+            left: 100%;
+        }
+
+        .expertise-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .expertise-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .expertise-icon {
+            font-size: 2.5rem;
+            margin-right: 1rem;
+            background: linear-gradient(135deg, var(--umass-maroon), var(--umass-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .expertise-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--umass-maroon);
+            margin: 0;
+        }
+
+        .expertise-description {
+            font-size: 0.95rem;
+            color: #495057;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .expertise-examples {
+            font-size: 0.85rem;
+            color: #6c757d;
+            font-style: italic;
+        }
+
+        .expertise-badge {
+            display: inline-block;
+            background: rgba(136, 28, 28, 0.1);
+            color: var(--umass-maroon);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            margin: 0.2rem 0.3rem 0.2rem 0;
+        }
+
+        .research-highlight {
+            background: linear-gradient(135deg, #f8f9fa, #ffffff);
+            border-left: 4px solid var(--umass-gold);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            color: #495057;
+        }
+
+        .research-highlight strong {
+            color: var(--umass-maroon);
+        }
     
     </style>
 </head>
@@ -211,7 +312,10 @@
                 </div> -->
                 <h1 class="hero-title">UMass AI Security Lab</h1>
                 <p class="hero-subtitle">
-                    Advancing the security, privacy, and safety of artificial intelligence through cutting-edge research and innovation.
+                    Building the guardrails for AI before the world needs them
+                </p>
+                <p class="hero-description" style="font-size: 1.1rem; opacity: 0.85; margin-top: 1rem; animation: fadeInUp 1s ease-out 0.6s both;">
+                    Think of us as AI's security team — we break it so the bad guys can't.
                 </p>
             </div>
         </div>
@@ -230,6 +334,95 @@
                         <h5 style="margin-bottom: 0.8rem; font-weight: 600;">Join our Fall 2025 AI Safety, Privacy and Security seminar!</h5>
                         <p style="margin-bottom: 0.5rem; opacity: 0.9;">Next Speaker: <strong>Ilia Shumailov</strong>, Google Deepmind</p>
                         <p style="margin-bottom: 0; opacity: 0.8; font-size: 0.95rem;">📅 Monday, September 8, 2025 | ⏰ 10:00 AM - 11:00 AM ET | 📍 CS 142 or via <a href="https://umass-amherst.zoom.us/j/99205813493?pwd=bJXhS6wqB4Oqido91tsq8jjVQR6QM8.1" style="color: var(--umass-gold);">Zoom</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Domains of Expertise Section -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="news-card">
+                    <h2 class="section-title">What We're Securing</h2>
+                    <div class="row g-4 mt-3">
+                        <div class="col-12 col-lg-6">
+                            <div class="expertise-card">
+                                <div class="expertise-content">
+                                    <div class="expertise-header">
+                                        <span class="expertise-icon">🕷️</span>
+                                        <h4 class="expertise-title">Web & Research Agents</h4>
+                                    </div>
+                                    <p class="expertise-description">Controlling autonomous agents that browse the web and conduct research — making sure they don't go rogue</p>
+                                    <div class="mb-2">
+                                        <span class="expertise-badge">Throttling</span>
+                                        <span class="expertise-badge">Agent Control</span>
+                                        <span class="expertise-badge">Web Safety</span>
+                                    </div>
+                                    <div class="research-highlight">
+                                        <strong>Current Research:</strong> Reasoning gates for web agents, autonomous browsing safety, and controlling AI research assistants
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="expertise-card">
+                                <div class="expertise-content">
+                                    <div class="expertise-header">
+                                        <span class="expertise-icon">🔒</span>
+                                        <h4 class="expertise-title">Privacy Protection</h4>
+                                    </div>
+                                    <p class="expertise-description">Membership inference attacks, contextual integrity, and keeping your data yours in the age of AI</p>
+                                    <div class="mb-2">
+                                        <span class="expertise-badge">Membership Inference</span>
+                                        <span class="expertise-badge">Data Privacy</span>
+                                        <span class="expertise-badge">Contextual Integrity</span>
+                                    </div>
+                                    <div class="research-highlight">
+                                        <strong>Current Research:</strong> Detecting when models leak training data, privacy-preserving AI systems, and contextual privacy frameworks
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="expertise-card">
+                                <div class="expertise-content">
+                                    <div class="expertise-header">
+                                        <span class="expertise-icon">🧠</span>
+                                        <h4 class="expertise-title">AI Reasoning</h4>
+                                    </div>
+                                    <p class="expertise-description">Understanding how AI thinks, reasons, and makes decisions — and how to keep it on track</p>
+                                    <div class="mb-2">
+                                        <span class="expertise-badge">Reasoning Safety</span>
+                                        <span class="expertise-badge">Decision Logic</span>
+                                        <span class="expertise-badge">AI Alignment</span>
+                                    </div>
+                                    <div class="research-highlight">
+                                        <strong>Current Research:</strong> Interpretable reasoning systems, safe decision-making frameworks, and AI behavioral analysis
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="expertise-card">
+                                <div class="expertise-content">
+                                    <div class="expertise-header">
+                                        <span class="expertise-icon">🎨</span>
+                                        <h4 class="expertise-title">Multi-Modal Security</h4>
+                                    </div>
+                                    <p class="expertise-description">Audio, text-to-image, and beyond — securing AI across all the ways it sees and creates</p>
+                                    <div class="mb-2">
+                                        <span class="expertise-badge">Audio Security</span>
+                                        <span class="expertise-badge">Image Generation</span>
+                                        <span class="expertise-badge">Cross-Modal Attacks</span>
+                                    </div>
+                                    <div class="research-highlight">
+                                        <strong>Current Research:</strong> Phonetic memorization attacks, generative model security, and multi-modal privacy vulnerabilities
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -258,7 +451,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.section-card, .stats-grid').forEach(el => {
+        document.querySelectorAll('.section-card, .stats-grid, .expertise-card').forEach(el => {
             observer.observe(el);
         });
     </script>
