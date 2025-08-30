@@ -14,73 +14,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/favicon.ico">
     <title>UMass AI Security</title>
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Noto Sans Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans+Mono' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="./assets/css/custom.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --umass-maroon: #881c1c;
+            --umass-gold: #ffc72c;
+            --gradient-bg: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            --hero-gradient: linear-gradient(135deg, #881c1c 0%, #a52a2a 50%, #881c1c 100%);
+            --shadow-soft: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-hover: 0 10px 25px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-glow: 0 0 20px rgba(136, 28, 28, 0.3);
+        }
+
+        body {
+            /* background: var(--gradient-bg); */
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        .hero-section {
+            background: var(--hero-gradient);
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><polygon fill="%23ffffff08" points="0,1000 1000,800 1000,1000"/><polygon fill="%23ffffff05" points="0,800 1000,600 1000,800 0,1000"/></svg>');
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-title {
+            color: white;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin: 0 auto;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.4rem;
+            font-weight: 300;
+            max-width: 700px;
+            margin: 0 auto;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .logo-container {
+            animation: fadeInUp 1s ease-out 0.1s both;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .floating {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .news-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(136, 28, 28, 0.1);
+        }
+
+        .news-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-5px);
+        }
+
+        .news-item {
+            background: linear-gradient(45deg, #ffffff, #ffffff);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--umass-gold);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .news-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 199, 44, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .news-item:hover::before {
+            left: 100%;
+        }
+
+        .news-item:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow-soft);
+        }
+
+        .section-title {
+            color: var(--umass-maroon);
+            font-weight: 700;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--umass-gold), var(--umass-maroon));
+            border-radius: 2px;
+        }
+
+        .upcoming-seminar {
+            background: linear-gradient(135deg, var(--umass-maroon), #a52a2a);
+            color: white;
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .upcoming-seminar::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 199, 44, 0.1) 0%, transparent 70%);
+            animation: float 4s ease-in-out infinite;
+        }
+    
+    </style>
 </head>
 
 <body>
     <div id="header" class="container"></div>
 
-    <div class="container body-container d-flex flex-column justify-content-start align-items-center text-center py-2">
-        <div class="col-12 col-md-10 col-lg-8">
-            <div class="mb-4">
-                <h3 class="fw-bold">Welcome!</h3>
-                <p class="mt-3 text-align">
-                    We are UMass Amherst researchers who are actively working on improving the security, privacy, and safety of AI technology.
-
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container hero-content">
+            <div class="text-center">
+                <!-- <div class="mb-4 logo-container floating">
+                    <img src="./assets/images/UMass AISec Logo.svg" alt="UMass AI Security Lab Logo" style="height: 200px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));">
+                </div> -->
+                <h1 class="hero-title">UMass AI Security Lab</h1>
+                <p class="hero-subtitle">
+                    Advancing the security, privacy, and safety of artificial intelligence through cutting-edge research and innovation.
                 </p>
             </div>
+        </div>
+    </div>
 
-            <div class="people" id="organizers">
-                <h4 class="fw-bold">People</h4>
-                <h5>Faculty</h5>
-                <div class="row mt-0">
-                    <div class="col-4 col-xs-4 col-sm-4 col-md-4 mb-4">
-                        <a href="https://people.cs.umass.edu/~amir/" target="_blank" class="card">
-                            <div class="card-img-top d-flex justify-content-center align-items-center profile-img-card mb-0">
-                                <img src="./assets/images/amir.jpeg" class="img-fluid profile-img" alt="Amir Houmansadr">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title mb-1">Amir Houmansadr</p>
-                                <p class="card-text">Associate Professor</p>
-                            </div>
-                            <a class="email" href="mailto:amir@cs.umass.edu">&#9993;</a>
-                        </a>
-                    </div>
-                    <div class="col-4 col-xs-4 col-sm-4 col-md-4 mb-4">
-                        <a href="https://people.cs.umass.edu/~eugene/" target="_blank" class="card">
-                            <div class="card-img-top d-flex justify-content-center align-items-center profile-img-card mb-0">
-                                <img src="./assets/images/eugene.jpg" class="img-fluid profile-img" alt="Eugene Bagdasarian">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title mb-1">Eugene Bagdasarian</p>
-                                <p class="card-text">Assistant Professor</p>
-                            </div>
-                            <a class="email" href="mailto:eugene@cs.umass.edu">&#9993;</a>
-                        </a>
-                    </div>
-                    <div class="col-4 col-xs-4 col-sm-4 col-md-4 mb-4">
-                        <a href="https://people.cs.umass.edu/~shiqingma/" target="_blank" class="card">
-                            <div class="card-img-top d-flex justify-content-center align-items-center profile-img-card mb-0">
-                                <img src="./assets/images/shiqing.jpeg" class="img-fluid profile-img" alt="Shiqing Ma">
-                            </div>
-                            <div class="card-body">
-                                <p class="card-title mb-1">Shiqing Ma</p>
-                                <p class="card-text">Assistant Professor</p>
-                            </div>
-                            <a class="email" href="mailto:shiqing@cs.umass.edu">&#9993;</a>
-                        </a>
+    <!-- News Section -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10">
+                <div class="news-card">
+                    <h2 class="section-title">Latest Updates</h2>
+                    
+                    <!-- Upcoming Seminar -->
+                    <div class="upcoming-seminar">
+                        <h4 style="margin-bottom: 1rem; font-weight: 600;">🎓 Upcoming Seminar</h4>
+                        <h5 style="margin-bottom: 0.8rem; font-weight: 600;">Join our Fall 2025 AI Safety, Privacy and Security seminar!</h5>
+                        <p style="margin-bottom: 0.5rem; opacity: 0.9;">Next Speaker: <strong>Ilia Shumailov</strong>, Google Deepmind</p>
+                        <p style="margin-bottom: 0; opacity: 0.8; font-size: 0.95rem;">📅 Monday, September 8, 2025 | ⏰ 10:00 AM - 11:00 AM ET | 📍 CS 142 or via <a href="https://umass-amherst.zoom.us/j/99205813493?pwd=bJXhS6wqB4Oqido91tsq8jjVQR6QM8.1" style="color: var(--umass-gold);">Zoom</a></p>
                     </div>
                 </div>
-
-                <h5>PhD Students</h5>
-                <div class="row" id="students"></div>
-
-                <!-- <h5>Alumni</h5>
-                <div class="row" id="alumni"></div> -->
             </div>
         </div>
     </div>
@@ -91,7 +242,26 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="./assets/scripts/common.js"></script>
-    <script src="./assets/scripts/people.js"></script>
+    <script>
+        // Simple fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationDelay = '0.1s';
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section-card, .stats-grid').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 
 </html>

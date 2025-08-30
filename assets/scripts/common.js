@@ -28,6 +28,9 @@ document.getElementById("header").replaceChildren(
                     <a href="/" class="nav-link px-2">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a href="/people" class="nav-link px-2">People</a>
+                </li>
+                <li class="nav-item">
                     <a href="/seminar" class="nav-link px-2">Seminar</a>
                 </li>
                 <li class="nav-item">
