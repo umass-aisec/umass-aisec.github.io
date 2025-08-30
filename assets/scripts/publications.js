@@ -5,12 +5,12 @@
     const current_year = new Date().getFullYear();
 
     function renderPublications() {
-        const show_all = document.getElementById("show_all").checked;
+        const hide_preprint = document.getElementById("hide_preprint").checked;
         const pubs_html = [];
-        const pubs = show_all
-            ? pubs_json
-            : pubs_json.filter(p => p.venue != "arXiv");
-        const min_year = show_all ? 0 : current_year - 4;
+        const pubs = hide_preprint
+            ? pubs_json.filter(p => p.venue != "arXiv")
+            : pubs_json;
+        const min_year = 2017;
 
         for (let year = current_year; year >= min_year; --year) {
             const filtered_pubs = pubs.filter(p => p.year == year);
@@ -30,5 +30,5 @@
     }
 
     renderPublications();
-    document.getElementById("show_all").onchange = renderPublications;
+    document.getElementById("hide_preprint").onchange = renderPublications;
 })();

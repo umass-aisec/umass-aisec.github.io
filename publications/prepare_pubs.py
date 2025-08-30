@@ -45,7 +45,7 @@ venue_url_filter = ",".join([
 
 query = f"""
 PREFIX dblp: <https://dblp.org/rdf/schema#>
-SELECT DISTINCT ?piName ?pub ?title ?year ?venue ?coAuthorName ?ordinal
+SELECT DISTINCT ?piName ?pub ?title ?year ?month ?venue ?coAuthorName ?ordinal
 WHERE {{
     VALUES ?pers {{ {prof_url_filter} }}
     ?pers dblp:creatorName ?piName .
@@ -53,6 +53,9 @@ WHERE {{
          dblp:title ?title ;
          dblp:yearOfPublication ?year ;
          dblp:publishedInStream ?venue .
+    OPTIONAL {{
+        ?pub dblp:monthOfPublication ?month .
+    }}
     ?pub dblp:hasSignature ?sig .
     ?sig dblp:signatureDblpName ?coAuthorName ;
          dblp:signatureOrdinal ?ordinal .
@@ -65,8 +68,8 @@ WHERE {{
         ?piName IN ({prof_name_filter})
     )
 }}
-GROUP BY ?pers ?piName ?pub ?title ?year ?venue ?coAuthorName ?ordinal
-ORDER BY DESC(?year) ?venue ?pub ?ordinal
+GROUP BY ?pers ?piName ?pub ?title ?year ?month ?venue ?coAuthorName ?ordinal
+ORDER BY DESC(?year) DESC(?month) ?venue ?pub ?ordinal
 """
 
 # Encode the query and retrieve results
@@ -78,6 +81,7 @@ data = response.json()
 # Process into a dataframe
 data = [{k: v["value"] for k, v in d.items()} for d in data["results"]["bindings"]]
 df = pd.DataFrame.from_dict(data)
+df["month"].fillna("--00", inplace=True)
 
 # Make nice venue name
 df["venue"] = df["venue"].str.split('/').str[-1].map(venues)
@@ -87,7 +91,7 @@ df["coAuthorName"] = df["coAuthorName"].str.replace(r'\s*\d+$', '', regex=True)
 
 # Group and aggregate co-author names (should already be ordered by the SPARQL query)
 df = (
-    df.groupby(["piName", "pub", "title", "year", "venue"], as_index=False)
+    df.groupby(["piName", "pub", "title", "year", "month", "venue"], as_index=False)
       .agg({"coAuthorName": lambda x: ", ".join(x)})
 )
 
@@ -112,6 +116,6 @@ arxiv_to_keep = arxiv_rows[~arxiv_rows["title"].apply(lambda t: is_similar(t, no
 df = pd.concat([non_arxiv_rows, arxiv_to_keep], ignore_index=True)
 
 # Final sort
-df = df.sort_values(by=["year", "venue"], ascending=[False, False])
+df = df.sort_values(by=["year", "month", "venue"], ascending=[False, False, False])
 
 df.to_json("../assets/data/pubs.json", orient="records", indent=4)
