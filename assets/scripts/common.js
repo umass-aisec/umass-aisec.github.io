@@ -20,7 +20,7 @@ document.getElementById("header").replaceChildren(
             <a href="/"
                 class="d-flex align-items-center mb-2 mb-md-0 link-body-emphasis text-decoration-none">
                 <img id="logo" class="me-2" src="/assets/images/UMass AISec Logo.svg">
-                <span class="fs-4 text-center text-md-start"><span class="umass">UMass Amherst</span> AI Security Group</span>
+                <span class="fs-4 text-center text-md-start">AI Security Lab at <span class="umass">UMass</span></span>
             </a>
 
             <ul class="nav justify-content-center mt-0 mt-md-0 mb-0">
@@ -76,3 +76,22 @@ document.getElementById("footer").replaceChildren(
         </footer>
     `)
 );
+
+
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.animationDelay = '0.1s';
+            entry.target.classList.add('fade-in');
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.section-card, .stats-grid, .expertise-card, .card').forEach(el => {
+    observer.observe(el);
+});
