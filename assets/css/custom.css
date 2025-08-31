@@ -471,7 +471,7 @@ a:hover {
 }
 
 .people .card-body {
-    padding: 0;
+    padding: 0.2rem;
 }
 
 .profile-card:hover .card-title {
