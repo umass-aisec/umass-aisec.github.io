@@ -45,16 +45,6 @@ a:hover {
     min-height: 40vh;
 }
 
-.people .card {
-    border: none;
-    font-size: 8pt;
-    text-decoration: none !important;
-}
-
-.people .card-body {
-    padding-bottom: 0.25em;
-}
-
 .email:hover {
     text-decoration: none;
     color: #971B2F;
@@ -472,6 +462,16 @@ a:hover {
     color: #2c3e50;
     margin-bottom: 0.5rem;
     transition: all 0.3s ease;
+}
+
+.people .card {
+    border: none;
+    font-size: 8pt;
+    text-decoration: none !important;
+}
+
+.people .card-body {
+    padding: 0;
 }
 
 .profile-card:hover .card-title {
