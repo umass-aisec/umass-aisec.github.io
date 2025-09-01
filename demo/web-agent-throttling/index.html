@@ -21,6 +21,181 @@
     <link href="../../assets/css/custom.css?v=1" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .image-slider {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .slider-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-height: 400px;
+            max-height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .slider-image {
+            max-width: 100%;
+            max-height: 600px;
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            object-fit: contain;
+        }
+        
+        .slider-image.active {
+            opacity: 1;
+        }
+        
+        .slider-nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 10px;
+        }
+        
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #ccc;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .slider-dot.active {
+            background-color: #007bff;
+        }
+        
+        .slider-caption {
+            text-align: center;
+            margin-top: 15px;
+            font-weight: 500;
+            color: #666;
+        }
+        
+        .slider-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 50%;
+            transition: background-color 0.3s ease;
+            z-index: 10;
+        }
+        
+        .slider-arrow:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
+        
+        .slider-arrow.prev {
+            left: 10px;
+        }
+        
+        .slider-arrow.next {
+            right: 10px;
+        }
+        
+        /* Generation Tokens Analysis Section Styling */
+        .tokens-analysis-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .token-chart-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        
+        .token-chart-card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+        }
+        
+        .chart-title {
+            color: #495057;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        .chart-container {
+            background: #fafbfc;
+            border-radius: 8px;
+            padding: 1rem;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        
+        .chart-image {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .analysis-description {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        
+        .analysis-description i {
+            color: #6c757d;
+        }
+        
+        /* Difficulty Performance Section Styling */
+        .difficulty-performance-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 16px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .performance-chart-container {
+            background: #fafbfc;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .performance-description {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            padding: 1rem 1.5rem;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        
+        .performance-description i {
+            color: #6c757d;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -83,10 +258,101 @@
                             </p>
                         </div>
                         
-                        <!-- Framework Image -->
+                        <!-- Framework Image Slider -->
                         <div class="text-center mt-4">
-                            <img src="static/images/main.png" alt="Reasoning Gates Framework Overview" 
-                                 class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+                            <div class="image-slider">
+                                <div class="slider-container">
+                                    <button class="slider-arrow prev" onclick="changeSlide(-1)">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                    <button class="slider-arrow next" onclick="changeSlide(1)">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                    
+                                    <img src="static/images/main.png" alt="Reasoning Gates Framework Overview" 
+                                         class="slider-image active" id="slide-1">
+                                    <img src="static/images/generation_pipeline.png" alt="Generation Pipeline" 
+                                         class="slider-image" id="slide-2">
+                                </div>
+                                
+                                <div class="slider-nav">
+                                    <div class="slider-dot active" onclick="currentSlide(1)"></div>
+                                    <div class="slider-dot" onclick="currentSlide(2)"></div>
+                                </div>
+                                
+                                <div class="slider-caption" id="slide-caption">
+                                    Throttling agents during the online phase
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Generation Tokens Analysis Section -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10 col-lg-10">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <div class="tokens-analysis-section">
+                                <h4 class="mb-4 text-dark fw-bold">Token Generation Analysis</h4>
+                                <div class="row g-4 justify-content-center">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="token-chart-card">
+                                            <h6 class="chart-title mb-3">Non-Reasoning Models</h6>
+                                            <div class="chart-container">
+                                                <img src="static/images/generation_tokens_till_correct_fix.png" 
+                                                     alt="Generation Tokens Till Correct - Fix Approach" 
+                                                     class="chart-image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="token-chart-card">
+                                            <h6 class="chart-title mb-3">Reasoning Models</h6>
+                                            <div class="chart-container">
+                                                <img src="static/images/generation_tokens_till_correct_reasoning_fix.png" 
+                                                     alt="Generation Tokens Till Correct - Reasoning Fix Approach" 
+                                                     class="chart-image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="analysis-description mt-4">
+                                    <p class="text-muted mb-0">
+                                        <i class="fas fa-chart-line me-2"></i>
+                                        Comparison of token efficiency between generation and prover models. The generator models use significantly less tokens than the prover models. Showing asymmetry.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Difficulty-Based Performance Section -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-10 col-lg-10">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="text-center">
+                            <div class="difficulty-performance-section">
+                                <h4 class="mb-4 text-dark fw-bold">Difficulty-Based Performance Analysis</h4>
+                                <div class="performance-chart-container">
+                                    <img src="static/images/difficulty_based_performance.png" 
+                                         alt="Difficulty-Based Performance Analysis" 
+                                         class="chart-image">
+                                </div>
+                                <div class="performance-description mt-4">
+                                    <p class="text-muted mb-0">
+                                        <i class="fas fa-chart-bar me-2"></i>
+                                        Performance analysis across different difficulty levels, demonstrating the effectiveness of reasoning gates at various complexity thresholds.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -202,6 +468,84 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="../../assets/scripts/common.js?v=1"></script>
+    
+    <script>
+        let currentSlideIndex = 1;
+        const totalSlides = 2;
+        const captions = [
+            "Throttling agents during the online phase",
+            "Generation of challenges during an offline phase"
+        ];
+
+        function showSlide(n) {
+            // Get all slides
+            const slides = document.querySelectorAll('.slider-image');
+            const dots = document.querySelectorAll('.slider-dot');
+            
+            // Remove active class from all slides and dots
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            // Show new slide
+            const newSlide = document.getElementById(`slide-${n}`);
+            newSlide.classList.add('active');
+            
+            // Adjust container height based on the new image
+            adjustContainerHeight(newSlide);
+            
+            // Activate current dot
+            dots[n-1].classList.add('active');
+            
+            // Update caption
+            document.getElementById('slide-caption').textContent = captions[n-1];
+            
+            currentSlideIndex = n;
+        }
+        
+        function adjustContainerHeight(activeImage) {
+            const container = document.querySelector('.slider-container');
+            if (activeImage.complete) {
+                const imageHeight = activeImage.naturalHeight;
+                const imageWidth = activeImage.naturalWidth;
+                const containerWidth = container.offsetWidth;
+                
+                // Calculate proportional height based on image aspect ratio
+                const maxHeight = Math.min(800, Math.max(400, (imageHeight / imageWidth) * containerWidth));
+                container.style.height = maxHeight + 'px';
+            } else {
+                // If image not loaded yet, wait for it to load
+                activeImage.onload = function() {
+                    adjustContainerHeight(activeImage);
+                };
+            }
+        }
+
+        function changeSlide(direction) {
+            let newIndex = currentSlideIndex + direction;
+            if (newIndex > totalSlides) {
+                newIndex = 1;
+            } else if (newIndex < 1) {
+                newIndex = totalSlides;
+            }
+            showSlide(newIndex);
+        }
+
+        function currentSlide(n) {
+            showSlide(n);
+        }
+
+        // Auto-advance slides every 5 seconds (always forward)
+        setInterval(() => {
+            if (currentSlideIndex === totalSlides) {
+                showSlide(1); // Go back to first slide
+            } else {
+                showSlide(currentSlideIndex + 1);
+            }
+        }, 5000);
+
+        // Initialize the slider
+        showSlide(1);
+    </script>
 </body>
 
-</html>
+</html> 
