@@ -166,7 +166,7 @@ a:hover {
 }
 
 .logo-container:hover {
-    transform: scale(1.05) rotate(2deg);
+    transform: scale(1.05);
 }
 
 @keyframes fadeInUp {
@@ -414,12 +414,11 @@ a:hover {
     overflow: hidden;
     height: 100%;
     position: relative;
-    transform: perspective(1000px) rotateX(0deg);
 }
 
 .card:hover, .profile-card:hover {
     box-shadow: var(--shadow-hover);
-    transform: translateY(-8px) perspective(1000px) rotateX(5deg);
+    transform: translateY(-8px);
     text-decoration: none;
     color: inherit;
 }
