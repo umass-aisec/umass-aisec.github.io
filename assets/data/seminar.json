@@ -6,9 +6,9 @@
             "name": "Ilia Shumailov",
             "affiliation": "Google Deepmind",
             "link": "https://scholar.google.com/citations?user=e-YbZyEAAAAJ",
-            "title": null,
-            "abstract": null,
-            "bio": null
+            "title": "Beyond model.generate(): Can I Even Tell What Is Going On and Why It Matters",
+            "abstract": "model.generate() is magic, it works! But why does it work and what is actually hiding behind this simple functional interface? This talk moves beyond model performance to inspect its untrusted origins. We'll explore how today's ML pipelines—built on layers of pre-trained models and third-party dependencies--are a fertile ground for problems.",
+            "bio": "Ilia Shumailov is a research scientist formerly at Google DeepMind, where he focused on machine learning security and adversarial vulnerabilities. He completed his PhD in Computer Science at the University of Cambridge in 2021 under the supervision of Professor Ross Anderson. His research explores the intersection of machine learning and computer security. Prior to DeepMind, he held fellowships at Christ Church, University of Oxford, and the Vector Institute."
         },
         {
             "date": "Mon, Sep 15",
