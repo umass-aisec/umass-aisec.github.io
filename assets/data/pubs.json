@@ -1,6 +1,7 @@
 [
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2507-08983",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2507.08983",
         "title":"Exploiting Leaderboards for Large-Scale Distribution of Malicious Models.",
         "year":"2025",
         "month":"--07",
@@ -9,6 +10,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2507-17937",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2507.17937",
         "title":"Bob's Confetti: Phonetic Memorization Attacks in Music and Video Generation.",
         "year":"2025",
         "month":"--07",
@@ -17,6 +19,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2505-01406",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2505.01406",
         "title":"VIDSTAMP: A Temporally-Aware Watermark for Ownership and Integrity in Video Diffusion Models.",
         "year":"2025",
         "month":"--05",
@@ -25,6 +28,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2505-12625",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2505.12625",
         "title":"R1dacted: Investigating Local Censorship in DeepSeek's R1 Language Model.",
         "year":"2025",
         "month":"--05",
@@ -33,6 +37,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2505-14549",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2505.14549",
         "title":"Can Large Language Models Really Recognize Your Name?",
         "year":"2025",
         "month":"--05",
@@ -41,6 +46,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2504-01094",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2504.01094",
         "title":"Multilingual and Multi-Accent Jailbreaking of Audio LLMs.",
         "year":"2025",
         "month":"--04",
@@ -49,6 +55,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2502-00306",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2502.00306",
         "title":"Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation.",
         "year":"2025",
         "month":"--02",
@@ -57,6 +64,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2502-02542",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2502.02542",
         "title":"OverThink: Slowdown Attacks on Reasoning LLMs.",
         "year":"2025",
         "month":"--02",
@@ -65,6 +73,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/conf\/ndss\/0002KH25",
+        "url":"https:\/\/www.ndss-symposium.org\/ndss-paper\/raifle-reconstruction-attacks-on-interaction-based-federated-learning-with-adversarial-data-manipulation\/",
         "title":"RAIFLE: Reconstruction Attacks on Interaction-based Federated Learning with Adversarial Data Manipulation.",
         "year":"2025",
         "month":"--00",
@@ -73,6 +82,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/conf\/ndss\/PengNH25",
+        "url":"https:\/\/www.ndss-symposium.org\/ndss-paper\/diffence-fencing-membership-privacy-with-diffusion-models\/",
         "title":"Diffence: Fencing Membership Privacy With Diffusion Models.",
         "year":"2025",
         "month":"--00",
@@ -81,6 +91,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/conf\/aaai\/TajimaWH25",
+        "url":"https:\/\/doi.org\/10.1609\/AAAI.V39I19.34289",
         "title":"Improving Private Random Forest Prediction Using Matrix Representation.",
         "year":"2025",
         "month":"--00",
@@ -89,6 +100,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2403-02437",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2403.02437",
         "title":"SoK: Challenges and Opportunities in Federated Unlearning.",
         "year":"2024",
         "month":"--00",
@@ -97,6 +109,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2404-13784",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2404.13784",
         "title":"Iteratively Prompting Multimodal LLMs to Reproduce Natural and AI-Generated Images.",
         "year":"2024",
         "month":"--00",
@@ -105,6 +118,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2406-05927",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2406.05927",
         "title":"MeanSparse: Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification.",
         "year":"2024",
         "month":"--00",
@@ -113,6 +127,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2406-15213",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2406.15213",
         "title":"Injecting Bias in Text-To-Image Models via Composite-Trigger Backdoors.",
         "year":"2024",
         "month":"--00",
@@ -121,6 +136,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2407-08792",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2407.08792",
         "title":"ProxyGPT: Enabling Anonymous Queries in AI Chatbots with (Un)Trustworthy Browser Proxies.",
         "year":"2024",
         "month":"--00",
@@ -129,6 +145,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2410-12010",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2410.12010",
         "title":"Bias Similarity Across Large Language Models.",
         "year":"2024",
         "month":"--00",
@@ -137,6 +154,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2411-01705",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2411.01705",
         "title":"Data Extraction Attacks in Retrieval-Augmented Generation via Backdoors.",
         "year":"2024",
         "month":"--00",
@@ -145,6 +163,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/conf\/nips\/PengRMH24",
+        "url":"http:\/\/papers.nips.cc\/paper_files\/paper\/2024\/hash\/71f88122d414cfeb455ac0ed932fbe1f-Abstract-Conference.html",
         "title":"OSLO: One-Shot Label-Only Membership Inference Attacks.",
         "year":"2024",
         "month":"--00",
@@ -153,6 +172,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2312-03692",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2312.03692",
         "title":"Memory Triggers: Unveiling Memorization in Text-To-Image Generative Models through Word-Level Duplication.",
         "year":"2023",
         "month":"--00",
@@ -161,6 +181,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/journals\/corr\/abs-2312-07550",
+        "url":"https:\/\/doi.org\/10.48550\/ARXIV.2312.07550",
         "title":"Understanding (Un)Intended Memorization in Text-to-Image Generative Models.",
         "year":"2023",
         "month":"--00",
@@ -169,6 +190,7 @@
     },
     {
         "pub":"https:\/\/dblp.org\/rec\/conf\/ccs\/NasehKIH23",
+        "url":"https:\/\/doi.org\/10.1145\/3576915.3616652",
         "title":"Stealing the Decoding Algorithms of Language Models.",
         "year":"2023",
         "month":"--00",

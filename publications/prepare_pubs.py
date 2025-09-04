@@ -45,17 +45,16 @@ venue_url_filter = ",".join([
 
 query = f"""
 PREFIX dblp: <https://dblp.org/rdf/schema#>
-SELECT DISTINCT ?piName ?pub ?title ?year ?month ?venue ?coAuthorName ?ordinal
+SELECT DISTINCT ?piName ?pub ?url ?title ?year ?month ?venue ?coAuthorName ?ordinal
 WHERE {{
     VALUES ?pers {{ {prof_url_filter} }}
     ?pers dblp:creatorName ?piName .
     ?pub dblp:authoredBy ?pers ;
+         dblp:primaryDocumentPage ?url ;
          dblp:title ?title ;
          dblp:yearOfPublication ?year ;
          dblp:publishedInStream ?venue .
-    OPTIONAL {{
-        ?pub dblp:monthOfPublication ?month .
-    }}
+    OPTIONAL {{ ?pub dblp:monthOfPublication ?month . }}
     ?pub dblp:hasSignature ?sig .
     ?sig dblp:signatureDblpName ?coAuthorName ;
          dblp:signatureOrdinal ?ordinal .
@@ -68,7 +67,7 @@ WHERE {{
         ?piName IN ({prof_name_filter})
     )
 }}
-GROUP BY ?pers ?piName ?pub ?title ?year ?month ?venue ?coAuthorName ?ordinal
+GROUP BY ?pers ?piName ?pub ?url ?title ?year ?month ?venue ?coAuthorName ?ordinal
 ORDER BY DESC(?year) DESC(?month) ?venue ?pub ?ordinal
 """
 
@@ -81,7 +80,7 @@ data = response.json()
 # Process into a dataframe
 data = [{k: v["value"] for k, v in d.items()} for d in data["results"]["bindings"]]
 df = pd.DataFrame.from_dict(data)
-df["month"].fillna("--00", inplace=True)
+df.fillna({"month": "--00"}, inplace=True)
 
 # Make nice venue name
 df["venue"] = df["venue"].str.split('/').str[-1].map(venues)
@@ -91,7 +90,7 @@ df["coAuthorName"] = df["coAuthorName"].str.replace(r'\s*\d+$', '', regex=True)
 
 # Group and aggregate co-author names (should already be ordered by the SPARQL query)
 df = (
-    df.groupby(["piName", "pub", "title", "year", "month", "venue"], as_index=False)
+    df.groupby(["piName", "pub", "url", "title", "year", "month", "venue"], as_index=False)
       .agg({"coAuthorName": lambda x: ", ".join(x)})
 )
 

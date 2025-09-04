@@ -20,7 +20,7 @@
             pubs_html.push(fromHTML(`<h5>${year}</h5>`));
             pubs_html.push(...filtered_pubs.map(p => fromHTML(
                 `<div class="mb-3">
-                    <a target="_blank" href="${p.pub}">${p.title}</a>
+                    <a target="_blank" href="${p.url}">${p.title}</a>
                     <span>${p.coAuthorName}.</span>
                     <span class="bg-primary badge">${p.venue}</span>
                 </div>`
