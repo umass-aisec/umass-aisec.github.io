@@ -3,6 +3,7 @@
         "name": "Dzung Pham",
         "link": "https://dzungvpham.github.io/",
         "img": "dzung.jpg",
+        "focus": "",
         "alumnus": false
     },
     {
@@ -21,12 +22,14 @@
         "name": "Jaechul Roh",
         "link": "https://jrohsc.github.io/",
         "img": "roh.png",
+        "focus": ["Audio AI Safety", ""],
         "alumnus": false
     },
     {
         "name": "Hyejun Jeong",
         "link": "https://hyejunjeong.github.io/",
         "img": "june.jpg",
+        "focus": ["Agentic Security and Privacy", "Responsible AI"],
         "alumnus": false
     },
     {
