@@ -1,3 +1,9 @@
+
+
+'''
+    This script will retrieve publications from DBLP and output to pubs_draft.json
+    DBLP updates rather slowly, so just manually add to the pubs.json file instead.
+'''
 import json
 import pandas as pd
 import urllib.parse
@@ -81,6 +87,7 @@ data = response.json()
 data = [{k: v["value"] for k, v in d.items()} for d in data["results"]["bindings"]]
 df = pd.DataFrame.from_dict(data)
 df.fillna({"month": "--00"}, inplace=True)
+df["month"] = df["month"].str.removeprefix("--")
 
 # Make nice venue name
 df["venue"] = df["venue"].str.split('/').str[-1].map(venues)
@@ -117,4 +124,6 @@ df = pd.concat([non_arxiv_rows, arxiv_to_keep], ignore_index=True)
 # Final sort
 df = df.sort_values(by=["year", "month", "venue"], ascending=[False, False, False])
 
-df.to_json("../assets/data/pubs.json", orient="records", indent=4)
+data = df.to_dict(orient="records")
+with open("../assets/data/pubs_draft.json", "w", encoding="utf-8") as f:
+    json.dump(data, f, ensure_ascii=False, indent=4)
