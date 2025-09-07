@@ -37,7 +37,7 @@ document.getElementById("header").replaceChildren(
                     <a href="/publications" class="nav-link px-2">Publications</a>
                 </li>
                 <li class="nav-item">
-                    <a href="/demo" class="nav-link px-2">Demo</a>
+                    <a href="/projects" class="nav-link px-2">Projects</a>
                 </li>
             </ul>
         </header>
