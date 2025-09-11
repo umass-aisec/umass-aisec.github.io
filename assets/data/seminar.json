@@ -26,9 +26,9 @@
             "name": "Ambra Demontis",
             "affiliation": "University of Cagliari",
             "link": "https://sites.unica.it/pralab/people/ambra-demontis/",
-            "title": null,
-            "abstract": null,
-            "bio": null
+            "title": "The Security of Machine Learning against Poisoning",
+            "abstract": "Organizations recognize poisoning as one of the attacks against machine learning systems that can affect their business the most. In this talk, I will provide a historical overview of poisoning attacks that manipulate training data to compromise the performance of machine learning systems at test time, along with the defenses developed against them, highlighting the principal research lines. During the talk, I will also provide examples of different typologies of poisoning attacks, including those aimed at slowing down model outputs, poisoning attacks that activate only after model pruning, and those designed against foundation models. Finally, I will discuss the current limitations and open research questions in this field.",
+            "bio": "Ambra Demontis is an Assistant Professor at the University of Cagliari, Italy. She received her M.Sc. degree (Hons.) in Computer Science and her Ph.D. degree in Electronic Engineering and Computer Science from the University of Cagliari, Italy, in 2014 and 2018. Her research focuses on the security of machine learning algorithms. These algorithms have reported outstanding performances; however, they can be easily fooled by attackers. The research of Dr. Ambra Demontis has contributed to studying their vulnerabilities to different types of attacks and making them more robust. She serves on the program committee of different conferences and journals. She is Associate Editor of the International Journal of Machine Learning and Cybernetics and the Elsevier Pattern Recognition Journal. She has been co-chair of the AISec workshops (2019-2022), area chair, and track chair of ICPR, and she is the chair of the IAPR TC 1. She is a member of IEEE, ACM, and IAPR."
         },
         {
             "date": "Mon, Sep 29",
