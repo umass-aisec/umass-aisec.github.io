@@ -71,6 +71,15 @@ document.getElementById("footer").replaceChildren(
                 <p class="text-muted">© <span>${new Date().getFullYear()}</span> <span class="umass">UMass Amherst</span> AI Security
                 <br>
                 <a class="email" href="mailto:aisec@cs.umass.edu">&#9993; aisec@cs.umass.edu</a>
+                <br>
+                <a href="https://www.linkedin.com/company/umass-aisec/" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/images/linkedin.png" alt="LinkedIn" class="me-1" style="width:16px; height:16px;"></a>
+                <a href="https://x.com/AISec_UMass" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/images/twitter.png" alt="Twitter" class="me-1" style="width:14px; height:14px;"></a>
+                <a href="https://bsky.app/profile/aisec-umass.bsky.social" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/images/bluesky.png" alt="Bluesky" class="me-1" style="width:16px; height:16px;"></a>
+                <a href="https://www.youtube.com/@UMassAISec" target="_blank" rel="noopener noreferrer">
+                    <img src="/assets/images/youtube.png" alt="YouTube" class="me-1" style="width:16px; height:16px;"></a>
                 </p>
             </div>
         </footer>
