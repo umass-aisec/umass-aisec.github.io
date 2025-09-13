@@ -16,9 +16,9 @@
             "name": "Benjamin Laufer",
             "affiliation": "Cornell Tech",
             "link": "https://bendlaufer.github.io/index.html",
-            "title": null,
-            "abstract": null,
-            "bio": null
+            "title": "AI Ecosystems: Structure, Strategy, Risk and Regulation",
+            "abstract": "The development of artificial intelligence is increasingly shaped by interactions between general-purpose model creators, downstream fine-tuners, regulators, and open-source communities. In this talk, I present a line of recent work that develops formal and empirical approaches to understanding these dynamics. First, I introduce a game-theoretic model of adaptation and regulation. Bargaining shapes the division of surplus between upstream creators and downstream adaptors, and regulatory choices around safety investments can impact the equilibrium strategies. A key insight is that weak regulation targeted only at downstream actors can backfire, reducing overall safety—whereas stronger, well-placed standards can align incentives and improve both safety and performance. Second, I turn to an empirical reconstruction of the machine learning ecosystem using 1.86 million models on Hugging Face. By mapping “family trees,” sprawling lineages of fine-tuning, we uncover evolutionary patterns that have implications for safety, security and governance. Ensuring safe and secure AI requires taking an ecosystem-level view, and considering the multiple actors and incentives involved in AI development.",
+            "bio": "Benjamin Laufer is a PhD student in the School of Computing and Information Sciences at Cornell Tech, where he is advised by Helen Nissenbaum and Jon Kleinberg, and affiliated with the AI, Policy and Practice Group and the Digital Life Initiative. He is interested in data-driven algorithmic systems and their implications for the public interest. His research uses tools and methods spanning statistics, game theory, network science, and ethics. Prior to joining Cornell, Ben worked as a data scientist at Lime, where he applied machine learning to urban mobility decisions. He graduated from Princeton University with a B.S.E. in Operations Research and Financial Engineering with minors in Urban Studies and Environmental Studies."
         },
         {
             "date": "Mon, Sep 22",
@@ -26,9 +26,9 @@
             "name": "Ambra Demontis",
             "affiliation": "University of Cagliari",
             "link": "https://sites.unica.it/pralab/people/ambra-demontis/",
-            "title": null,
-            "abstract": null,
-            "bio": null
+            "title": "The Security of Machine Learning against Poisoning",
+            "abstract": "Organizations recognize poisoning as one of the attacks against machine learning systems that can affect their business the most. In this talk, I will provide a historical overview of poisoning attacks that manipulate training data to compromise the performance of machine learning systems at test time, along with the defenses developed against them, highlighting the principal research lines. During the talk, I will also provide examples of different typologies of poisoning attacks, including those aimed at slowing down model outputs, poisoning attacks that activate only after model pruning, and those designed against foundation models. Finally, I will discuss the current limitations and open research questions in this field.",
+            "bio": "Ambra Demontis is an Assistant Professor at the University of Cagliari, Italy. She received her M.Sc. degree (Hons.) in Computer Science and her Ph.D. degree in Electronic Engineering and Computer Science from the University of Cagliari, Italy, in 2014 and 2018. Her research focuses on the security of machine learning algorithms. These algorithms have reported outstanding performances; however, they can be easily fooled by attackers. The research of Dr. Ambra Demontis has contributed to studying their vulnerabilities to different types of attacks and making them more robust. She serves on the program committee of different conferences and journals. She is Associate Editor of the International Journal of Machine Learning and Cybernetics and the Elsevier Pattern Recognition Journal. She has been co-chair of the AISec workshops (2019-2022), area chair, and track chair of ICPR, and she is the chair of the IAPR TC 1. She is a member of IEEE, ACM, and IAPR."
         },
         {
             "date": "Mon, Sep 29",

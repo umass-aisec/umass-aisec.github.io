@@ -68,7 +68,7 @@
         "title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation.",
         "year": "2025",
         "month": "02",
-        "venue": "arXiv",
+        "venue": "ACM CCS",
         "coAuthorName": "Ali Naseh, Yuefeng Peng, Anshuman Suri, Harsh Chaudhari, Alina Oprea, Amir Houmansadr"
     },
     {
@@ -185,7 +185,7 @@
         "title": "Memory Triggers: Unveiling Memorization in Text-To-Image Generative Models through Word-Level Duplication.",
         "year": "2023",
         "month": "00",
-        "venue": "arXiv",
+        "venue": "PPAI",
         "coAuthorName": "Ali Naseh, Jaechul Roh, Amir Houmansadr"
     },
     {
