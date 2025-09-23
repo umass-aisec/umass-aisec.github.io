@@ -36,9 +36,9 @@
             "name": "Arman Zharmagambetov",
             "affiliation": "Meta FAIR",
             "link": "https://arman-z.github.io/",
-            "title": null,
-            "abstract": null,
-            "bio": null
+            "title": "Security and Privacy Evaluation of Autonomous AI Agents",
+            "abstract": "Autonomous AI agents have the potential to greatly enhance productivity by automating complex, multi-step tasks, but their ability to act on users’ behalf raises significant security and privacy concerns. In this talk, we introduce two new benchmarks—WASP for evaluating agents’ resilience to prompt injection attacks, and AGENTDAM for assessing whether these agents “overshare” sensitive data without permission. Our end-to-end evaluations reveal that even state-of-the-art agents are vulnerable to simple attacks and often misuse sensitive information, highlighting the risks of deploying these systems in real-world scenarios. We also discuss several defense mechanisms and emphasize the need for further research to ensure autonomous AI agents are both secure and privacy-preserving.",
+            "bio": "Arman Zharmagambetov is a research scientist in the Fundamental AI Research (FAIR) team at Meta. His research primarily focuses on machine learning and optimization, recently exploring their application in enhancing the security and robustness of AI systems. He received his PhD from the University of California – Merced, , advised by Miguel Carreira-Perpinan. Afterward, he completed his postdoctoral research with Yuandong Tian at FAIR, focusing on AI-guided design and optimization."
         },
         {
             "date": "Mon, Oct 06",
