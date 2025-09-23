@@ -2,7 +2,7 @@
     const pubs = await fetch("/assets/data/pubs.json");
     const pubs_json = await pubs.json();
 
-    const current_year = new Date().getFullYear();
+    const current_year = new Date().getFullYear() + 1;
 
     function renderPublications() {
         const hide_preprint = document.getElementById("hide_preprint").checked;
