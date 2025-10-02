@@ -46,9 +46,9 @@
             "name": "Madiha Z. Choksi",
             "affiliation": "Cornell Tech",
             "link": "https://madihaz.com/",
-            "title": null,
-            "abstract": null,
-            "bio": null
+            "title": "Terms of Care: Designing Participatory Data Governance for Disability Communities",
+            "abstract": "Improving the poor performance of AI media generation for marginalized communities requires data, necessitating communities to balance between increased technological function and risks of data misuse and exploitation. To support marginalized communities to safely engage with AI development, we explore participatory approaches to AI data governance and stewardship with three disability advocacy organizations. We first document governance norms and tensions that shape how “high-context” disability communities can engage with licensing through a set of semi-structured interviews. We then present the results of a series of iterative interventions that led to the creation of adaptable community data licenses that reflect the relational organizational values observed. Synthesizing this work, we contribute (1) a framework for translating values into modular license clauses, and (2) design implications for AI platforms to better support community-led stewardship. We argue that highly contextual license design does not scale; relational, context-sensitive approaches are critical for trustworthy AI governance.",
+            "bio": "Madiha Zahrah Choksi is a Ph.D. candidate in Computing and Information Science at Cornell Tech, advised by Helen Nissenbaum and James Grimmelmann. She works on topics at the intersection of technology, privacy, and law, with a focus on community governance. Specifically, she is interested in understanding how online communities use technical and legal affordances to establish norms and express and enact their values with an emphasis on privacy and openness. She has published widely across HCI, law, and AI governance. Her scholarship has earned top paper awards at CHI and ICA and has influenced both platform design and public debate on surveillance. Beyond research, she brings a decade of professional experience spanning government, academia, and industry, and is committed to building equitable, public-interest digital infrastructures."
         },
         {
             "date": "Mon, Oct 20",
@@ -56,7 +56,7 @@
             "name": "Rebecca Portnoff",
             "affiliation": "Thorn",
             "link": "https://rebeccasportnoff.com/",
-            "title": null,
+            "title": "Safety by Design for Generative AI: Preventing Child Sexual Abuse",
             "abstract": null,
             "bio": null
         },
