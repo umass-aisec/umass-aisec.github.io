@@ -66,9 +66,9 @@
             "name": "Tingwei Zhang",
             "affiliation": "Cornell University",
             "link": "https://ztingwei.com/",
-            "title": null,
-            "abstract": null,
-            "bio": null
+            "title": "Exposing and Exploiting Vulnerabilities in Multi-Modal Representations",
+            "abstract": "Multi-modal embeddings align representations across different modalities (e.g., text, images, and audio) and serve as a core component of modern machine learning systems. However, their cross-modal nature also introduces new attack surfaces and security challenges. In this talk, I will present three works that expose vulnerabilities in multi-modal embeddings and propose potential defenses. 1) Adversarial Illusions: We show that embeddings can be attacked by perturbing an input to make its representation match a chosen target from another modality. These attacks are cross-modal, targeted, and compromise any downstream tasks. 2) Adversarial Hubs: We show that high-dimensional multi-modal spaces suffer from hubness—where certain points become spuriously similar to many others—and that attackers can exploit this property to inject adversarial “hub” content that dominates retrieval results or targets specific concepts. 3) Indirect Prompt Injection: We present indirect, cross-modal prompt injection attacks where hidden “meta-instructions” embedded in images influence the behavior of visual language models. These attacks enable adversaries to manipulate model interpretation and generation, leading to biased or harmful outputs.",
+            "bio": "Tingwei Zhang is a third-year PhD student in Computer Science at Cornell Tech, advised by Professor Vitaly Shmatikov. His research focuses on security and privacy challenges in machine learning technologies, particularly in real-world scenarios and under adversarial conditions, with the goal of developing secure, ethical, and privacy-preserving AI systems."
         },
         {
             "date": "Mon, Nov 03",
@@ -76,9 +76,9 @@
             "name": "Kathrin Grosse",
             "affiliation": "IBM Research",
             "link": "https://research.ibm.com/people/kathrin-grosse",
-            "title": null,
-            "abstract": null,
-            "bio": null
+            "title": "From Practical Machine Learning Security to AI Security Incident Reporting",
+            "abstract": "Cybersecurity ensures the trustworthy and reliable functioning of digital systems. Currently, companies spend roughly 10% of their IT budget on cybersecurity. Thus, security becomes increasingly relevant also for emerging technologies like artificial intelligence (AI). Despite a large body of academic research, our current understanding of AI security has a critical gap. It does not cover how companies, public institutions, and non-profits use AI. This gap manifests as models are studied instead of pipelines, infeasible perturbations, or assumptions are unrealistic. This leaves us with a limited understanding of AI vulnerabilities. Meanwhile, attackers aren't waiting. They are already exploiting these vulnerabilities, and we discuss the evidence of these real-world AI security incidents. We thus discuss a proposal for an AI security incident reporting framework to create a practical understanding of AI security threats, allowing us to take a step towards trustworthy and secure AI.",
+            "bio": "Kathrin Grosse is a Research Scientist at IBM Research, Zurich, Switzerland. Her research interests focus on AI security in the industry. Her work bridges research (in AI security) and industry needs. She received her master’s degree from Saarland University and her Ph.D. from Saarland University, in 2021 under the supervision of Michael Backes at CISPA Helmholtz Center. Following, she did a PostDoc with Battista Biggio in Cagliari, Italy; and Alexandre Alahi at EPFL, Switzerland. She interned with IBM in 2019 and Disney Research in 2020/21. As part of her work, she serves as a reviewer for, among others, IEEE S&P, Usenix Security, and ICML and organizes workshops at NeurIPS and ICML. In 2019, she was nominated as an AI Newcomer for the German Federal Ministry of Education and Research’s Science Year."
         },
         {
             "date": "Mon, Nov 10",
