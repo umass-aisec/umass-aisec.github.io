@@ -1,5 +1,14 @@
 [
     {
+        "pub": "https://arxiv.org/abs/2510.17620",
+        "url": "https://arxiv.org/abs/2510.17620",
+        "title": "Forget to Know, Remember to Use: Context-Aware Unlearning for Large Language Models.",
+        "year": "2025",
+        "month": "10",
+        "venue": "arXiv",
+        "coAuthorName": "Yuefeng Peng, Parnian Afshar, Megan Ganji, Thomas Butler, Amir Houmansadr, Mingxian Wang, Dezhi Hong"
+    },
+    {
         "pub": "https://arxiv.org/abs/2509.01619",
         "url": "https://arxiv.org/abs/2509.01619",
         "title": "Throttling Web Agents Using Reasoning Gates.",
