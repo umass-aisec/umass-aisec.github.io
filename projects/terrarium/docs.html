@@ -270,8 +270,9 @@
       <div class="section-title">Overview</div>
       <ul class="nav">
         <li><a class="active" href="#introduction">Introduction</a></li>
-        <li><a href="#project-features">Feature Highlights</a></li>
+        <li><a href="#installation">Installation</a></li>
         <li><a href="#quickstart">Quickstart</a></li>
+        <li><a href="#project-features">Feature Highlights</a></li>
       </ul>
 
       <div class="section-title">Architecture</div>
@@ -294,7 +295,6 @@
       <div class="section-title">Operations</div>
       <ul class="nav">
         <li><a href="#operations">Operations Checklist</a></li>
-        <li><a href="#operations-installation">Installation</a></li>
         <li><a href="#operations-running">Running Simulations</a></li>
         <li><a href="#operations-config">Configuration & Seeds</a></li>
         <li><a href="#operations-examples">Examples</a></li>
@@ -357,6 +357,27 @@
           </div>
         </div>
 
+        <h2 id="installation">Installation</h2>
+        <p>
+          Set up Terrarium locally with a dedicated environment before running simulations.
+        </p>
+        <pre><code class="language-bash"># Clone the Terrarium repository
+git clone &lt;repository-url&gt;
+cd terrarium
+
+# Create and activate a dedicated environment (recommended)
+conda create --name terrarium python=3.11
+conda activate terrarium
+
+# Install Terrarium in editable mode
+uv pip install -e .</code></pre>
+        <p>
+          Store provider credentials in <code>.env</code> at the project root:
+        </p>
+        <pre><code class="language-bash">OPENAI_API_KEY=&lt;your_key&gt;
+GOOGLE_API_KEY=&lt;your_key&gt;
+ANTHROPIC_API_KEY=&lt;your_key&gt;</code></pre>
+
         <h2 id="quickstart">Quickstart</h2>
         <p>
           Run the minimal MeetingScheduling simulation with two terminals. 
@@ -393,7 +414,7 @@ python examples/base/main.py --config examples/configs/meeting_scheduling.yaml</
 
         <h2 id="architecture-overview">Architecture Overview</h2>
         <p>
-          Terrarium wraps the classic blackboard MAS design around contemporary LLM tooling. Agents interact through blackboards, coordinate via the communication protocol, and execute safe environment actions exposed by MCP servers. The figure below (from <code>dev/framework_rounded.png</code>) depicts the flow.
+          Terrarium wraps the classic blackboard MAS design around contemporary LLM tooling. Agents interact through blackboards, coordinate via the communication protocol, and execute safe environment actions exposed by MCP servers. The figure below depicts the flow.
         </p>
         <figure>
           <img src="static/images/framework.png" alt="Terrarium framework overview diagram" />
@@ -464,26 +485,8 @@ python examples/base/main.py --config examples/configs/meeting_scheduling.yaml</
 
         <h2 id="operations">Operations Checklist</h2>
         <p>
-          Running Terrarium requires Python 3.11+, provider API keys, and an MCP server for tool execution. Follow the steps below to stand up a simulation locally.
+          Running Terrarium requires Python 3.11+, provider API keys, and an MCP server for tool execution. After installing the project with the steps above, use the guidance below to launch simulations and manage configuration.
         </p>
-
-        <h3 id="operations-installation">Installation</h3>
-        <pre><code class="language-bash"># Clone the Terrarium repository
-git clone &lt;repository-url&gt;
-cd terrarium
-
-# Create and activate a dedicated environment (recommended)
-conda create --name terrarium python=3.11
-conda activate terrarium
-
-# Install Terrarium in editable mode
-uv pip install -e .</code></pre>
-        <p>
-          Store provider credentials in <code>.env</code> at the project root:
-        </p>
-        <pre><code class="language-bash">OPENAI_API_KEY=&lt;your_key&gt;
-GOOGLE_API_KEY=&lt;your_key&gt;
-ANTHROPIC_API_KEY=&lt;your_key&gt;</code></pre>
 
         <h3 id="operations-running">Running Simulations</h3>
         <ol>
