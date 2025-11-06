@@ -86,9 +86,9 @@
             "name": "Saeed Mahloujifar",
             "affiliation": "Meta FAIR",
             "link": "https://smahloujifar.github.io/",
-            "title": null,
-            "abstract": null,
-            "bio": null
+            "title": "How Much Can Language Models Memorize?",
+            "abstract": "What does it really mean when a language model “memorizes” its training data? memorization remains one of the most puzzling behaviors of foundation models. In this talk, I’ll unpack the conceptual and practical challenges in defining memorization, propose a new definition based on Kolmogorov complexity, and show how this perspective helps us measure memorization efficiently and meaningfully. I’ll also share experiments that reveal surprising patterns in how large models internalize their data, with implications for privacy, generalization, and interpretability.",
+            "bio": "Saeed Mahloujifar is a Research Scientist in the Fundamental AI Research (FAIR) team at Meta. His research interests are on theoretical foundations of privacy and security for AI systems and their interplay with cryptography."
         },
         {
             "date": "Mon, Nov 17",
