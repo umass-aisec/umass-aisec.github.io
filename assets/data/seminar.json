@@ -96,9 +96,9 @@
             "name": "Matthew Wright",
             "affiliation": "Rochester Institute of Technology",
             "link": "https://sites.google.com/site/matthewkwright/",
-            "title": null,
-            "abstract": null,
-            "bio": null
+            "title": "Towards an All-in-One Media Forensics Tool",
+            "abstract": "Intelligence analysts, journalists, and forensics experts must quickly and accurately examine and report on information in multiple modalities, including video, audio, and images. With the rise of Generative AI, these specialists face unprecedented challenges and require effective, reliable, and explainable media detection and analysis tools. This work explores their requirements for deepfake detection tools and explainability features, with studies involving 30 US-based intelligence analysts, 24 US journalists, and 11 Bangladeshi journalists. We conclude that these specialists need an all-in-one tool for media forensics and propose an ontology-based approach to creating a navigable user interface for such a tool.",
+            "bio": "Matthew Wright, PhD, is the Kevin O’Sullivan Professor and Chair of Cybersecurity at the Rochester Institute of Technology (RIT). He earned his PhD from UMass Amherst in 2005 under the esteemed supervision of one Brian Neil Levine. He has co-authored over 100 peer-reviewed papers, including works appearing in top venues such as IEEE S&P (“Oakland”), CCS, USENIX Security, NDSS, ACM CHI, INFOCOM, and various IEEE and ACM Transactions. He received an NSF CAREER award in 2010 and has been PI on over $5.8 million in external research funding. His research spans privacy and anonymity online, human factors in security, distributed systems security, and the application of AI to cybersecurity problems."
         },
         {
             "date": "Mon, Nov 24",
