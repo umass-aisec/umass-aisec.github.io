@@ -106,9 +106,9 @@
             "name": "Ali Naseh",
             "affiliation": "UMass Amherst",
             "link": "https://ali7naseh.github.io/",
-            "title": null,
-            "abstract": null,
-            "bio": null
+            "title": "Security Vulnerabilities in Generative Model Leaderboards",
+            "abstract": "Generative model leaderboards have become a widely used way for developers and practitioners to discover and adopt state-of-the-art models across modalities such as text, audio, and images. In this talk, I will show that despite their importance, leaderboard infrastructures introduce an underexplored attack surface that enables adversaries to distribute malicious models at scale and manipulate rankings with minimal resources. In the first part, I present TrojanClimb, a general attack framework showing how adversaries can insert malicious behaviors such as backdoors, bias injection, or harmful triggers while still achieving top leaderboard performance. Across benchmark-based and voting-based leaderboards, we demonstrate that poisoned models can quietly rise in rank, inherit trust from popular models, and reach large numbers of unsuspecting users. Our results span four modalities: text embedding, text generation, text to speech, and text to image. In the second part, I present our systematic study of deanonymization attacks on text-to-image leaderboards. We show that generations from each model form tight, well-separated clusters in modern embedding spaces, enabling near-perfect identification of the generating model without prompt control or training data. This breaks the core anonymity assumption in voting-based T2I leaderboards and enables strategic vote manipulation.",
+            "bio": "Ali Naseh is a PhD candidate in Computer Science at the University of Massachusetts Amherst, advised by Prof. Amir Houmansadr. His research focuses on the security and privacy of large generative models. His work has appeared in leading security and privacy venues, including USENIX Security, ACM CCS (where he received a Distinguished Paper Award), and the IEEE Symposium on Security and Privacy (S&P). Ali has also completed a research internship at Oracle, working on privacy-preserving machine learning."
         },
         {
             "date": "Mon, Dec 01",
