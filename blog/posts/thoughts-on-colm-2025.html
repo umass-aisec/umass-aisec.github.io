@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZLN17ZEB1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-TZLN17ZEB1');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+    <title>Thoughts on COLM 2025 - UMass AI Security Blog</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans+Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="../../assets/css/custom.css?v=1" rel="stylesheet">
+    <style>
+        .blog-post {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .blog-post-header {
+            margin-bottom: 2rem;
+        }
+        .blog-post-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        .blog-post-meta {
+            color: #6c757d;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .blog-post-content {
+            font-family: 'Lora', Georgia, serif;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #212529;
+        }
+        .blog-post-content h2 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #212529;
+        }
+        .blog-post-content p {
+            margin-bottom: 1.5rem;
+        }
+        .blog-post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        .blog-post-content .image-caption {
+            font-size: 0.9rem;
+            color: #6c757d;
+            text-align: center;
+            font-style: italic;
+            margin-top: -1rem;
+            margin-bottom: 1.5rem;
+        }
+        .blog-post-content a {
+            color: #881c1c;
+            text-decoration: underline;
+        }
+        .blog-post-content a:hover {
+            color: #6a1515;
+        }
+        .blog-back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #6c757d;
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-size: 0.95rem;
+        }
+        .blog-back-link:hover {
+            color: #881c1c;
+        }
+        .blog-back-link svg {
+            margin-right: 0.5rem;
+        }
+        .references {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+        .references h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        .references ol {
+            margin-bottom: 0;
+            padding-left: 1.25rem;
+        }
+        .references li {
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header" class="container"></div>
+
+    <div class="container my-5">
+        <div class="blog-post">
+            <a href="/blog" class="blog-back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg>
+                Back to Blog
+            </a>
+
+            <header class="blog-post-header">
+                <h1 class="blog-post-title">Thoughts on COLM 2025</h1>
+                <div class="blog-post-meta">
+                    <span>By <strong>Jaechul Roh</strong>, PhD Student at UMass Amherst AI Security Lab </span><br>
+                    <span>December 14, 2025</span>
+                </div>
+            </header>
+
+            <article class="blog-post-content">
+                <p>
+                    I had the privilege of attending and presenting our work <em>"Multilingual and Multi-Accent Jailbreaking of Audio LLMs"</em> [1] at this year's Conference on Language Models (COLM) 2025, held in Montreal, Canada. Although the conference took place in October and I am writing this reflection a couple of months later, many of the ideas and discussions remain vivid. In that sense, the experience was genuinely impactful. In this post, I would like to reflect on some of the key lessons and perspectives I took away from COLM 2025.
+                </p>
+
+                <h2>Rethinking Safety in Language Models</h2>
+
+                <img src="images/thoughts_on_colm_1.jpg" alt="Nicholas Carlini's invited talk at COLM 2025">
+                <p class="image-caption">
+                    Invited talk by Nicholas Carlini, "Are the Harms and Risks of LLMs Worth It?", encouraging the audience to reflect on the safety implications of large language models. Photo by Jaechul Roh.
+                </p>
+
+                <p>
+                    One of the aspects I particularly appreciated about COLM was its atmosphere. Compared to larger conferences, it felt more intimate and less crowded, yet the overall quality of the papers was remarkably high. The invited talks featured outstanding researchers from around the world, but the one that resonated most strongly with my own research interests was Nicholas Carlini's talk.
+                </p>
+
+                <p>
+                    What stood out immediately was that Carlini (widely known for his work and talk on adversarial machine learning) was invited to speak at a conference focused specifically on language models, rather than a general machine learning or security venue. This choice itself felt deliberate and refreshing, and it highlighted COLM's openness to rethinking the boundaries of what "language model research" encompasses.
+                </p>
+
+                <p>
+                    Carlini began his talk by acknowledging that many in the audience might expect a discussion centered on adversarial attacks. Instead, he shifted the attention toward a broader and more unsettling topic, which is safety. Rather than focusing solely on jailbreaking models or bypassing safeguards, he raised a deeper question&mdash;what does it actually mean to make a model <em>safe</em>?
+                </p>
+
+                <p>
+                    To ground this discussion, he referenced several real-world legal cases, including tragic incidents in which vulnerable individuals, including children [2, 3], were reportedly influenced by interactions with AI systems, with devastating consequences. These cases, which have led to lawsuits against AI developers, underscore the seriousness of the issue and the real human stakes involved.
+                </p>
+
+                <p>
+                    This perspective prompted me to rethink how we frame threats and risks in language models. Much of the existing discourse emphasizes extreme or stylized scenarios, such as deliberately asking the model <em>"how to build a bomb"</em>. While these cases are undeniably important, they may not capture the most common or realistic ways harm can arise. Instead, we may need to pay greater attention to subtle, long-term, and socially embedded interactions, where models influence users' decisions, emotions, or beliefs in ways that are harder to detect but potentially more harmful.
+                </p>
+
+                <p>
+                    From this angle, safety is no longer just about preventing forbidden outputs, but about understanding how language models participate in human lives and how their behavior, even when seemingly benign, can pose real risks. For me, this was one of the most thought-provoking takeaways from COLM, and it continues to shape how I think about safety and threat models in my own research.
+                </p>
+
+                <p>
+                    This, in many ways, is also the beauty of our field. Progress is often driven by carefully designing and proposing <em>new threat models</em> that capture realistic and previously overlooked scenarios, alongside principled methods and algorithms to address them. By clearly motivating why a proposed threat model reflects plausible real-world risks, we not only persuade readers of its relevance but also provide the necessary context for understanding why a particular technical approach is needed in the first place.
+                </p>
+
+                <h2>Generative Interface</h2>
+
+                <img src="images/thoughts_on_colm_2.jpg" alt="Yoshua Bengio's keynote at the Workshop on AI Agents">
+                <p class="image-caption">
+                    Yoshua Bengio delivering the opening keynote at the <em>Workshop on AI Agents: Capabilities and Safety</em>. Photo by Jaechul Roh.
+                </p>
+
+                <p>
+                    Workshops have always been one of my favorite parts of academic conferences. They tend to be less crowded and more focused, which often leads to deeper discussions and more direct engagement with emerging ideas. At COLM, I planned much of my day around attending the <em>Workshop on AI Agents: Capabilities and Safety</em>.
+                </p>
+
+                <p>
+                    The workshop opened with a keynote by Yoshua Bengio, who has recently been emphasizing the importance of alignment and safety in advanced AI systems, including through the establishment of the nonprofit research organization LawZero.
+                </p>
+
+                <p>
+                    One of the most engaging moments of the workshop came during the panel discussion on the future of AI agents, particularly around privacy and security implications. A highlight for me was when Diyi raised a critical question about how humans should interact with AI systems. She argued that the current text-based user interface of systems like ChatGPT may not be the most effective or expressive way for users to understand and engage with model outputs. This discussion connected directly to her recent work on <em>"Generative Interfaces for Language Models"</em> [4], which introduces generative interfaces that move beyond static text by turning model responses into interactive artifacts, enabling users to explore outputs dynamically and gain a deeper understanding of how models reason and respond.
+                </p>
+
+                <p>
+                    At first glance, you may wonder how this is related to privacy or security. However, every new modality and interaction paradigm introduces new attack surfaces and threat models. More importantly, this line of work invites a broader and more constructive question: what is the most effective way for humans to interact with intelligent systems? How can we design interfaces that improve user understanding, trust, and control without introducing unintended risks?
+                </p>
+
+                <p>
+                    For me, this paper represents a promising starting point for rethinking human&ndash;machine interaction more fundamentally. These emerging interfaces offer exciting opportunities, but they also demand careful threat modeling and responsible design. We are actively investigating these questions in our lab, so stay tuned for upcoming projects.
+                </p>
+
+                <h2>Conclusion</h2>
+
+                <img src="images/thoughts_on_colm_3.jpg" alt="Poster on Multilingual and Multi-Accent Jailbreaking of Audio LLMs">
+                <p class="image-caption">
+                    Our poster on "Multilingual and Multi-Accent Jailbreaking of Audio LLMs". Photo by Jaechul Roh.
+                </p>
+
+                <p>
+                    Overall, COLM 2025 reinforced for me how rapidly the scope of language model research is evolving, both technically and socially. From rethinking safety beyond narrowly defined forbidden behaviors to exploring new interaction paradigms such as generative interfaces, the conference highlighted a shift toward more realistic, human-centered perspectives on AI risk and design. What stood out most was the growing recognition that safety, privacy, and usability are deeply intertwined: how models behave, how users interact with them, and how systems are deployed all shape the risks they pose. As language models become increasingly embedded in everyday life, developing principled threat models, thoughtful interfaces, and robust safeguards will be essential. These themes strongly resonate with our lab's ongoing work, and COLM provided both validation and inspiration as we continue to explore these challenges at the intersection of language models, safety, and human&ndash;machine interaction.
+                </p>
+
+                <div class="references">
+                    <h3>References</h3>
+                    <ol>
+                        <li>Roh, Jaechul, Virat Shejwalkar, and Amir Houmansadr. "Multilingual and multi-accent jailbreaking of audio llms." arXiv preprint arXiv:2504.01094 (2025).</li>
+                        <li>NBC News. "OpenAI Denies Allegation ChatGPT Is Responsible for Teenager's Death in Adam Raine Lawsuit." NBC News, 26 Nov. 2025, <a href="https://www.nbcnews.com/tech/tech-news/openai-denies-allegation-chatgpt-teenagers-death-adam-raine-lawsuit-rcna245946" target="_blank">https://www.nbcnews.com/tech/tech-news/openai-denies-allegation-chatgpt-teenagers-death-adam-raine-lawsuit-rcna245946</a>.</li>
+                        <li>CNN. "OpenAI Faces Lawsuit Over Alleged Role of ChatGPT in Teen's Suicide." CNN, 6 Nov. 2025, <a href="https://www.cnn.com/2025/11/06/us/openai-chatgpt-suicide-lawsuit-invs-vis" target="_blank">https://www.cnn.com/2025/11/06/us/openai-chatgpt-suicide-lawsuit-invs-vis</a>.</li>
+                        <li>Chen, Jiaqi, et al. "Generative interfaces for language models." arXiv preprint arXiv:2508.19227 (2025).</li>
+                    </ol>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../../assets/scripts/common.js?v=1"></script>
+</body>
+
+</html>
