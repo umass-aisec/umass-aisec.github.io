@@ -15,7 +15,7 @@
         for (let year = current_year; year >= min_year; --year) {
             const filtered_pubs = pubs.filter(p => p.year == year);
             if (filtered_pubs.length == 0) {
-                break;
+                continue;
             }
             pubs_html.push(fromHTML(`<h5>${year}</h5>`));
             pubs_html.push(...filtered_pubs.map(p => fromHTML(
