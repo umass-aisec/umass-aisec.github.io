@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <!-- Google tag (gtag.js) -->
@@ -12,13 +12,20 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UMass Amherst AI Security Lab - Advancing research in AI safety, privacy, and security">
     <link rel="shortcut icon" href="./assets/images/favicon.ico">
-    <title>UMass AI Security</title>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700' rel='stylesheet'>
+    <title>UMass AI Security Lab</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Noto+Sans+Mono' rel='stylesheet'>
+
+    <!-- Styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="./assets/css/custom.css?v=1" rel="stylesheet">
+    <link href="./assets/css/custom.css?v=2" rel="stylesheet">
 </head>
 
 <body>
@@ -26,209 +33,216 @@
 
     <!-- Hero Section -->
     <div class="page-header">
-        <div class="container hero-content">
+        <div class="container">
             <div class="text-center">
                 <h1 class="page-title">UMass AI Security Lab</h1>
-                <!-- <div class="hero-quote" style="margin-top: 1rem; max-width: 650px; margin-left: auto; margin-right: auto; animation: fadeInUp 1s ease-out 0.3s both;">
-                    <blockquote style="font-size: 1.1rem; font-style: italic; opacity: 0.9; margin: 0 0 0.3rem 0; font-weight: 300; position: relative; padding-left: 1.2rem;">
-                        "An ounce of prevention is worth a pound of cure"
-                    </blockquote>
-                    <cite style="font-size: 0.85rem; opacity: 0.7; font-style: normal; display: block; text-align: right; margin-bottom: 1.2rem;">
-                        — Benjamin Franklin
-                    </cite>
-                </div> -->
-<!--                 <p class="page-subtitle" style="animation: fadeInUp 1s ease-out 0.6s both;">
-                    Building the guardrails for AI before the world needs them, especially when the cure involves explaining to everyone why their AI went rogue.
-                </p> -->
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">50+</div>
+                        <div class="hero-stat-label">Publications</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">20+</div>
+                        <div class="hero-stat-label">Researchers</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="hero-stat-number">4</div>
+                        <div class="hero-stat-label">Faculty</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- News Section -->
-    <!-- <div class="container my-5">
+    <div class="container py-4">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
-                <div class="section-card news-card">
-                    <h2 class="section-title">Latest Events</h2>
 
-                    <!-- Upcoming Seminar is automatically injected via /assets/scripts/index.js -->
-                    <!-- <div class="upcoming-seminar" id="seminar_event"></div>
-                </div>
-            </div>
-        </div>
-    </div> --> 
+                <!-- Faculty Section -->
+                <section class="news-card">
+                    <h2 class="section-title">Faculty</h2>
+                    <div class="faculty-grid">
+                        <a href="https://people.cs.umass.edu/~amir/" target="_blank" class="faculty-card">
+                            <img src="/assets/images/amir.jpeg" alt="Amir Houmansadr" class="faculty-card-img">
+                            <div class="faculty-card-info">
+                                <h4>Amir Houmansadr</h4>
+                                <p>Professor</p>
+                            </div>
+                        </a>
+                        <a href="https://people.cs.umass.edu/~eugene/" target="_blank" class="faculty-card">
+                            <img src="/assets/images/eugene.jpg" alt="Eugene Bagdasarian" class="faculty-card-img">
+                            <div class="faculty-card-info">
+                                <h4>Eugene Bagdasarian</h4>
+                                <p>Assistant Professor</p>
+                            </div>
+                        </a>
+                        <a href="https://people.cs.umass.edu/~shiqingma/" target="_blank" class="faculty-card">
+                            <img src="/assets/images/shiqing.jpeg" alt="Shiqing Ma" class="faculty-card-img">
+                            <div class="faculty-card-info">
+                                <h4>Shiqing Ma</h4>
+                                <p>Assistant Professor (Affiliated)</p>
+                            </div>
+                        </a>
+                        <a href="https://www.cics.umass.edu/about/directory/adam-oneill" target="_blank" class="faculty-card">
+                            <img src="/assets/images/adam.jpeg" alt="Adam O'Neill" class="faculty-card-img">
+                            <div class="faculty-card-info">
+                                <h4>Adam O'Neill</h4>
+                                <p>Assistant Professor (Affiliated)</p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
 
-    <!-- Recent Updates Section -->
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <div class="section-card news-card">
+                <!-- Recent News Section -->
+                <section class="news-card">
                     <h2 class="section-title">Recent News</h2>
-                    <div class="d-flex align-items-center gap-3" style="background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%); border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; border-left: 4px solid var(--umass-maroon); box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-                        <img src="/blog/posts/images/thoughts_on_colm_1.jpg" alt="COLM 2025" style="width: 56px; height: 56px; object-fit: cover; border-radius: 8px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <div>
-                            <strong style="color: var(--umass-maroon);">New Blog Post:</strong> <a href="/blog/posts/thoughts-on-colm-2025.html">Thoughts on COLM 2025</a><br>
-                            <span style="font-size: 0.9rem; color: #666;"><strong>Author:</strong> Jaechul Roh</span>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center gap-3" style="background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%); border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; border-left: 4px solid var(--umass-maroon); box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-                        <img src="/figures/ieee_Exploiting.png" alt="IEEE S&P 2026" style="width: 56px; height: 56px; object-fit: cover; border-radius: 8px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <div>
-                            <strong style="color: var(--umass-maroon);">IEEE S&P 2026 🎉:</strong> <span style="color: #333; font-weight: 500;"><a href="https://arxiv.org/pdf/2507.08983">Exploiting Leaderboards for Large-Scale Distribution of Malicious Models</span></a><br>
-                            <span style="font-size: 0.9rem; color: #666;"><strong>Authors:</strong> Anshuman Suri, Harsh Chaudhari, Yuefeng Peng, Ali Naseh, Amir Houmansadr, Alina Oprea</span>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center gap-3" style="background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%); border-radius: 12px; padding: 1.25rem; border-left: 4px solid var(--umass-maroon); box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-                        <img src="/projects/terrarium/static/images/terrarium_example.png" alt="Terrarium" style="width: 56px; height: 56px; object-fit: cover; border-radius: 8px; flex-shrink: 0; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-                        <div>
-                            <strong style="color: var(--umass-maroon);">New Project:</strong> <a href="/projects/terrarium/">Terrarium: Revisiting the Blackboard for Multi-Agent Safety, Privacy, and Security Studies</a><br>
-                            <span style="font-size: 0.9rem; color: #666;"><strong>Authors:</strong> Mason Nakamura, Abhinav Kumar, Saaduddin Mahmud, Sahar Abdelnabi, Shlomo Zilberstein, Eugene Bagdasarian</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Domains of Expertise Section -->
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <div class="section-card news-card">
-                    <h2 class="section-title">Our Expertise</h2>
-                    <div class="row g-4 mt-3">
-                        <div class="col-12 col-lg-6">
-                            <div class="expertise-card">
-                                <div class="expertise-content">
-                                    <div class="expertise-header">
-                                        <span class="expertise-icon">🎨</span>
-                                        <h4 class="expertise-title">Attacks on Generative Models</h4>
-                                    </div>
-                                    <p class="expertise-description">Audio, text-to-image, reasoning LLMs and beyond — securing AI across all the ways it sees and creates</p>
-                                    <div class="mb-2">
-                                        <span class="expertise-badge">Text-to-Image</span>
-                                        <span class="expertise-badge">Audio</span>
-                                        <span class="expertise-badge">Reasoning LLM</span>
-                                    </div>
-                                    <div class="research-highlight">
-                                        <strong>Current Research:</strong> Text-to-Image Generation Security, Audio LLM Security, and Reasoning Time Attacks
-                                    </div>
-                                </div>
+                    <div class="news-item">
+                        <img src="/blog/posts/images/thoughts_on_colm_1.jpg" alt="COLM 2025" class="news-item-img">
+                        <div class="news-item-content">
+                            <span class="news-item-label">New Blog Post</span>
+                            <div class="news-item-title">
+                                <a href="/blog/posts/thoughts-on-colm-2025.html">Thoughts on COLM 2025</a>
                             </div>
+                            <div class="news-item-meta">Jaechul Roh</div>
                         </div>
-                        
-                        <div class="col-12 col-lg-6">
-                            <div class="expertise-card">
-                                <div class="expertise-content">
-                                    <div class="expertise-header">
-                                        <span class="expertise-icon">🔒</span>
-                                        <h4 class="expertise-title">AI Privacy</h4>
-                                    </div>
-                                    <p class="expertise-description">Membership inference attacks, contextual integrity, and keeping your data yours in the age of AI</p>
-                                    <div class="mb-2">
-                                        <span class="expertise-badge">Membership Inference</span>
-                                        <span class="expertise-badge">Memorization</span>
-                                        <span class="expertise-badge">Contextual Integrity</span>
-                                    </div>
-                                    <div class="research-highlight">
-                                        <strong>Current Research:</strong> Memorization, Data Leakage, Privacy-Preserving AI systems, and Contextual Integrity frameworks
-                                    </div>
-                                </div>
+                    </div>
+
+                    <div class="news-item">
+                        <img src="/figures/ieee_Exploiting.png" alt="IEEE S&P 2026" class="news-item-img">
+                        <div class="news-item-content">
+                            <span class="news-item-label">IEEE S&amp;P 2026</span>
+                            <div class="news-item-title">
+                                <a href="https://arxiv.org/pdf/2507.08983" target="_blank">Exploiting Leaderboards for Large-Scale Distribution of Malicious Models</a>
+                            </div>
+                            <div class="news-item-meta">Anshuman Suri, Harsh Chaudhari, Yuefeng Peng, Ali Naseh, Amir Houmansadr, Alina Oprea</div>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <img src="/projects/terrarium/static/images/terrarium_example.png" alt="Terrarium" class="news-item-img">
+                        <div class="news-item-content">
+                            <span class="news-item-label">New Demo</span>
+                            <div class="news-item-title">
+                                <a href="/projects/terrarium/">Terrarium: Multi-Agent Safety, Privacy, and Security Studies</a>
+                            </div>
+                            <div class="news-item-meta">Mason Nakamura, Abhinav Kumar, Saaduddin Mahmud, Sahar Abdelnabi, Shlomo Zilberstein, Eugene Bagdasarian</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Research Areas Section -->
+                <section class="news-card">
+                    <h2 class="section-title">Research Areas</h2>
+                    <div class="expertise-grid">
+                        <div class="expertise-card">
+                            <div class="expertise-header">
+                                <span class="expertise-icon">🎨</span>
+                                <h4 class="expertise-title">Attacks on Generative Models</h4>
+                            </div>
+                            <p class="expertise-description">
+                                Securing AI across all modalities — audio, text-to-image, reasoning LLMs and beyond
+                            </p>
+                            <div>
+                                <span class="expertise-badge">Text-to-Image</span>
+                                <span class="expertise-badge">Audio</span>
+                                <span class="expertise-badge">Reasoning LLM</span>
+                            </div>
+                            <div class="research-highlight">
+                                <strong>Current Focus:</strong> Text-to-Image Security, Audio LLM Security, Reasoning Time Attacks
                             </div>
                         </div>
 
-                        <div class="col-12 col-lg-6">
-                            <div class="expertise-card">
-                                <div class="expertise-content">
-                                    <div class="expertise-header">
-                                        <span class="expertise-icon">🕷️</span>
-                                        <h4 class="expertise-title">Agentic Security and Privacy</h4>
-                                    </div>
-                                    <p class="expertise-description">Controlling and securing autonomous agents across all modalities</p>
-                                    <div class="mb-2">
-                                        <span class="expertise-badge">Web Agent</span>
-                                        <span class="expertise-badge">Research Agent</span>
-                                        <span class="expertise-badge">Multi-Modal Agent</span>
-                                    </div>
-                                    <div class="research-highlight">
-                                        <strong>Current Research:</strong> Reasoning Gates for Web Agents, Controlling AI Research Agents, and Securing Multi-Modal Agents
-                                    </div>
-                                </div>
+                        <div class="expertise-card">
+                            <div class="expertise-header">
+                                <span class="expertise-icon">🔒</span>
+                                <h4 class="expertise-title">AI Privacy</h4>
+                            </div>
+                            <p class="expertise-description">
+                                Membership inference, contextual integrity, and protecting data in the age of AI
+                            </p>
+                            <div>
+                                <span class="expertise-badge">Membership Inference</span>
+                                <span class="expertise-badge">Memorization</span>
+                                <span class="expertise-badge">Contextual Integrity</span>
+                            </div>
+                            <div class="research-highlight">
+                                <strong>Current Focus:</strong> Data Leakage, Privacy-Preserving AI, Contextual Integrity Frameworks
                             </div>
                         </div>
 
-                        <div class="col-12 col-lg-6">
-                            <div class="expertise-card">
-                                <div class="expertise-content">
-                                    <div class="expertise-header">
-                                        <span class="expertise-icon">⚖️</span>
-                                        <h4 class="expertise-title">Ethics and Societal Impact</h4>
-                                    </div>
-                                    <p class="expertise-description">Understanding and building AI systems that align with human values and societal norms</p>
-                                    <div class="mb-2">
-                                        <span class="expertise-badge">Bias</span>
-                                        <span class="expertise-badge">Propaganda</span>
-                                        <span class="expertise-badge">Responsible AI</span>
-                                    </div>
-                                    <div class="research-highlight">
-                                        <strong>Current Research:</strong> Bias Attack and Detection in Text-to-Image, Fairness in LLMs
-                                    </div>
-                                </div>
+                        <div class="expertise-card">
+                            <div class="expertise-header">
+                                <span class="expertise-icon">🤖</span>
+                                <h4 class="expertise-title">Agentic Security</h4>
+                            </div>
+                            <p class="expertise-description">
+                                Controlling and securing autonomous agents across all modalities
+                            </p>
+                            <div>
+                                <span class="expertise-badge">Web Agents</span>
+                                <span class="expertise-badge">Research Agents</span>
+                                <span class="expertise-badge">Multi-Modal</span>
+                            </div>
+                            <div class="research-highlight">
+                                <strong>Current Focus:</strong> Reasoning Gates for Web Agents, AI Research Agent Control
+                            </div>
+                        </div>
+
+                        <div class="expertise-card">
+                            <div class="expertise-header">
+                                <span class="expertise-icon">⚖️</span>
+                                <h4 class="expertise-title">Ethics &amp; Societal Impact</h4>
+                            </div>
+                            <p class="expertise-description">
+                                Building AI systems that align with human values and societal norms
+                            </p>
+                            <div>
+                                <span class="expertise-badge">Bias Detection</span>
+                                <span class="expertise-badge">Propaganda</span>
+                                <span class="expertise-badge">Responsible AI</span>
+                            </div>
+                            <div class="research-highlight">
+                                <strong>Current Focus:</strong> Bias in Text-to-Image, Fairness in LLMs
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </section>
 
-    <!-- Social network -->
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-10">
-                <div class="section-card news-card">
-                    <h2 class="section-title">Follow Us</h2>
-                    <div>
-                        Stay up-to-date with our latest papers, news, events, and lectures from leading researchers in AI security!
+                <!-- Social Section -->
+                <section class="social-section">
+                    <h2 class="section-title">Stay Connected</h2>
+                    <p>Follow us for the latest papers, news, events, and lectures from leading researchers in AI security.</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/umass-aisec/" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="/assets/images/linkedin.png" alt="">
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://x.com/AISec_UMass" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="/assets/images/twitter.png" alt="">
+                            <span>X (Twitter)</span>
+                        </a>
+                        <a href="https://bsky.app/profile/aisec-umass.bsky.social" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="/assets/images/bluesky.png" alt="">
+                            <span>Bluesky</span>
+                        </a>
+                        <a href="https://www.youtube.com/@UMassAISec" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <img src="/assets/images/youtube.png" alt="">
+                            <span>YouTube</span>
+                        </a>
                     </div>
-                    <div class="mt-2">
-                        <div>
-                            <a href="https://www.linkedin.com/company/umass-aisec/" target="_blank" rel="noopener noreferrer" class="d-inline-flex align-items-center text-decoration-none">
-                                <img src="/assets/images/linkedin.png" alt="LinkedIn" class="me-1" style="width:20px; height:20px;">
-                                <span>LinkedIn</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://x.com/AISec_UMass" target="_blank" rel="noopener noreferrer" class="d-inline-flex align-items-center text-decoration-none">
-                                <img src="/assets/images/twitter.png" alt="Twitter" class="me-1" style="width:18px; height:18px;">
-                                <span>X (Twitter)</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://bsky.app/profile/aisec-umass.bsky.social" target="_blank" rel="noopener noreferrer" class="d-inline-flex align-items-center text-decoration-none">
-                                <img src="/assets/images/bluesky.png" alt="Bluesky" class="me-1" style="width:20px; height:20px;">
-                                <span>Bluesky</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://www.youtube.com/@UMassAISec" target="_blank" rel="noopener noreferrer" class="d-inline-flex align-items-center text-decoration-none">
-                                <img src="/assets/images/youtube.png" alt="YouTube" class="me-1" style="width:20px; height:20px;">
-                                <span>YouTube</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                </section>
+
             </div>
         </div>
     </div>
 
     <div id="footer"></div>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="./assets/scripts/common.js?v=1"></script>
-    <script src="../assets/scripts/index.js"></script>
+    <script src="./assets/scripts/common.js?v=2"></script>
 </body>
 
 </html>
