@@ -311,17 +311,17 @@ a:hover {
 .faculty-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin-top: 1.5rem;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .faculty-card {
     background: white;
-    border-radius: var(--radius-lg);
-    padding: 1.5rem;
+    border-radius: var(--radius-md);
+    padding: 1rem;
     display: flex;
     align-items: center;
-    gap: 1.25rem;
+    gap: 1rem;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--gray-200);
     transition: all var(--transition-base);
@@ -338,12 +338,12 @@ a:hover {
 }
 
 .faculty-card-img {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     object-fit: cover;
     flex-shrink: 0;
-    border: 3px solid var(--gray-100);
+    border: 2px solid var(--gray-100);
     transition: border-color var(--transition-base);
 }
 
@@ -356,7 +356,7 @@ a:hover {
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--gray-800);
-    margin: 0 0 0.25rem 0;
+    margin: 0 0 0.2rem 0;
 }
 
 .faculty-card-info p {
@@ -565,9 +565,8 @@ a:hover {
 }
 
 .social-link img {
-    width: 18px;
-    height: 18px;
-    filter: brightness(0) invert(1);
+    width: 20px;
+    height: 20px;
 }
 
 /* ============================================
