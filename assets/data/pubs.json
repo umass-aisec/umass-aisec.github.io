@@ -1,11 +1,20 @@
 [
     {
+        "pub": "https://arxiv.org/abs/2601.09647",
+        "url": "https://arxiv.org/abs/2601.09647",
+        "title": "Identifying Models Behind Text-to-Image Leaderboards.",
+        "year": "2026",
+        "month": "06",
+        "venue": "CVPR",
+        "coAuthorName": "Ali Naseh, Yuefeng Peng, Anshuman Suri, Harsh Chaudhari, Alina Oprea, Amir Houmansadr"
+    },
+    {
         "pub": "https://arxiv.org/abs/2510.17620",
         "url": "https://arxiv.org/abs/2510.17620",
         "title": "Forget to Know, Remember to Use: Context-Aware Unlearning for Large Language Models.",
-        "year": "2025",
+        "year": "2026",
         "month": "10",
-        "venue": "arXiv",
+        "venue": "ICML",
         "coAuthorName": "Yuefeng Peng, Parnian Afshar, Megan Ganji, Thomas Butler, Amir Houmansadr, Mingxian Wang, Dezhi Hong"
     },
     {
@@ -21,10 +30,28 @@
         "pub": "https://arxiv.org/abs/2508.20282",
         "url": "https://arxiv.org/abs/2508.20282",
         "title": "Network-Level Prompt and Trait Leakage in Local Research Agents.",
-        "year": "2025",
+        "year": "2026",
         "month": "08",
-        "venue": "arXiv",
-        "coAuthorName": " Hyejun Jeong, Mohammadreza Teymoorianfard, Abhinav Kumar, Amir Houmansadr, Eugene Badasarian"
+        "venue": "USENIX",
+        "coAuthorName": "Hyejun Jeong, Mohammadreza Teymoorianfard, Abhinav Kumar, Amir Houmansadr, Eugene Badasarian"
+    },
+    {
+        "pub": "https://arxiv.org/abs/2403.02437",
+        "url": "https://arxiv.org/abs/2403.02437",
+        "title": "A Survey on Federated Unlearning: Challenges and Opportunities.",
+        "year": "2026",
+        "month": "01",
+        "venue": "IEEE Transactions on Big Data",
+        "coAuthorName": "Hyejun Jeong, Shiqing Ma, Amir Houmansadr"
+    },
+    {
+        "pub": "https://arxiv.org/abs/2410.12010",
+        "url": "https://arxiv.org/abs/2410.12010",
+        "title": "Bias Similarity Measurement: A Black-Box Audit of Fairness Across LLMs.",
+        "year": "2026",
+        "month": "04",
+        "venue": "ICLR",
+        "coAuthorName": "Hyejun Jeong, Shiqing Ma, Amir Houmansadr"
     },
     {
         "pub": "https://dblp.org/rec/journals/corr/abs-2507-08983",
@@ -75,9 +102,9 @@
         "pub": "https://dblp.org/rec/journals/corr/abs-2505-14549",
         "url": "https://doi.org/10.48550/ARXIV.2505.14549",
         "title": "Can Large Language Models Really Recognize Your Name?",
-        "year": "2025",
-        "month": "05",
-        "venue": "PrivaCI",
+        "year": "2026",
+        "month": "06",
+        "venue": "ACM FAccT",
         "coAuthorName": "Dzung Pham, Peter Kairouz, Niloofar Mireshghallah, Eugene Bagdasarian, Chau Minh Pham, Amir Houmansadr"
     },
     {
@@ -135,15 +162,6 @@
         "coAuthorName": "Arisa Tajima, Joie Wu, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2403-02437",
-        "url": "https://doi.org/10.48550/ARXIV.2403.02437",
-        "title": "SoK: Challenges and Opportunities in Federated Unlearning.",
-        "year": "2024",
-        "month": "00",
-        "venue": "arXiv",
-        "coAuthorName": "Hyejun Jeong, Shiqing Ma, Amir Houmansadr"
-    },
-    {
         "pub": "https://dblp.org/rec/journals/corr/abs-2404-13784",
         "url": "https://doi.org/10.48550/ARXIV.2404.13784",
         "title": "Iteratively Prompting Multimodal LLMs to Reproduce Natural and AI-Generated Images.",
@@ -169,15 +187,6 @@
         "month": "00",
         "venue": "MADWeb",
         "coAuthorName": "Dzung Pham, Jade Sheffey, Chau Minh Pham, Amir Houmansadr"
-    },
-    {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2410-12010",
-        "url": "https://doi.org/10.48550/ARXIV.2410.12010",
-        "title": "Bias Similarity Across Large Language Models.",
-        "year": "2024",
-        "month": "00",
-        "venue": "arXiv",
-        "coAuthorName": "Hyejun Jeong, Shiqing Ma, Amir Houmansadr"
     },
     {
         "pub": "https://dblp.org/rec/journals/corr/abs-2411-01705",
