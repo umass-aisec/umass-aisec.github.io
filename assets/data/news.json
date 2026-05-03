@@ -1,63 +1,63 @@
 [
   {
-    "date": "2025-10-01",
-    "label": "New Blog Post",
-    "title": "Thoughts on COLM 2025",
-    "authors": "Jaechul Roh",
-    "link": "/blog/posts/thoughts-on-colm-2025.html",
-    "image": "/blog/posts/images/thoughts_on_colm_1.jpg",
-    "alt": "COLM 2025"
-  },
-  {
     "date": "2026-04-30",
-    "label": "ICML 2026",
-    "title": "Forget to Know, Remember to Use: Context-Aware Unlearning for Large Language Models",
-    "authors": "Yuefeng Peng, Parnian Afshar, Megan Ganji, Thomas Butler, Amir Houmansadr, Mingxian Wang, Dezhi Hong",
+    "label": "Paper accepted",
+    "title": "Our paper on context-aware unlearning was accepted to ICML 2026",
+    "description": "Forget to Know, Remember to Use: Context-Aware Unlearning for Large Language Models",
     "link": "#",
     "image": "/figures/Yuefeng_icml.png",
-    "alt": "ICML 2026 paper"
+    "alt": "ICML 2026 context-aware unlearning paper"
   },
   {
     "date": "2026-04-15",
-    "label": "ACM FAccT 2026",
-    "title": "Can Large Language Models Really Recognize Your Name?",
-    "authors": "Dzung Pham, Peter Kairouz, Eugene Bagdasarian, Niloofar Mireshghallah, Chau Minh Pham, Amir Houmansadr",
+    "label": "Paper accepted",
+    "title": "Our paper on whether LLMs recognize names was accepted to ACM FAccT 2026",
+    "description": "Can Large Language Models Really Recognize Your Name?",
     "link": "#",
     "image": "/figures/Dzung_facct.png",
-    "alt": "ACM FAccT 2026 paper"
+    "alt": "ACM FAccT 2026 name recognition paper"
   },
   {
     "date": "2026-02-22",
-    "label": "CVPR 2026",
-    "title": "When Anonymity Breaks: Identifying Models Behind Text-to-Image Leaderboards",
-    "authors": "Ali Naseh, Anshuman Suri, Yuefeng Peng, Harsh Chaudhari, Alina Oprea, Amir Houmansadr",
+    "label": "Paper accepted",
+    "title": "Our paper on identifying models behind text-to-image leaderboards was accepted to CVPR 2026",
+    "description": "When Anonymity Breaks: Identifying Models Behind Text-to-Image Leaderboards",
     "link": "https://arxiv.org/pdf/2510.06525",
     "image": "/figures/t2i_cvpr.png",
     "alt": "CVPR 2026 text-to-image leaderboard paper"
   },
   {
     "date": "2026-01-25",
-    "label": "ICLR 2026",
-    "title": "Bias Similarity Measurement: A Black-Box Audit of Fairness Across LLMs",
-    "authors": "Hyejun Jeong, Shiqing Ma, Amir Houmansadr",
+    "label": "Paper accepted",
+    "title": "Our paper on black-box bias similarity measurement was accepted to ICLR 2026",
+    "description": "Bias Similarity Measurement: A Black-Box Audit of Fairness Across LLMs",
     "link": "#",
     "image": "/figures/Bias_similarity_iclr.png",
     "alt": "ICLR 2026 bias similarity paper"
   },
   {
+    "date": "2025-10-01",
+    "label": "New Blog Post",
+    "title": "Thoughts on COLM 2025",
+    "description": "Jaechul Roh shares reflections from COLM 2025.",
+    "link": "/blog/posts/thoughts-on-colm-2025.html",
+    "image": "/blog/posts/images/thoughts_on_colm_1.jpg",
+    "alt": "COLM 2025"
+  },
+  {
     "date": "2025-07-10",
-    "label": "IEEE S&P 2026",
-    "title": "Exploiting Leaderboards for Large-Scale Distribution of Malicious Models",
-    "authors": "Anshuman Suri, Harsh Chaudhari, Yuefeng Peng, Ali Naseh, Amir Houmansadr, Alina Oprea",
+    "label": "Paper accepted",
+    "title": "Our paper on exploiting leaderboards for malicious model distribution was accepted to IEEE S&P 2026",
+    "description": "Exploiting Leaderboards for Large-Scale Distribution of Malicious Models",
     "link": "https://arxiv.org/pdf/2507.08983",
     "image": "/figures/ieee_Exploiting.png",
-    "alt": "IEEE S&P 2026"
+    "alt": "IEEE S&P 2026 leaderboard paper"
   },
   {
     "date": "2025-07-01",
     "label": "New Demo",
-    "title": "Terrarium: Multi-Agent Safety, Privacy, and Security Studies",
-    "authors": "Mason Nakamura, Abhinav Kumar, Saaduddin Mahmud, Sahar Abdelnabi, Shlomo Zilberstein, Eugene Bagdasarian",
+    "title": "Terrarium demo is now available",
+    "description": "Terrarium: Multi-Agent Safety, Privacy, and Security Studies",
     "link": "/projects/terrarium/",
     "image": "/projects/terrarium/static/images/terrarium_example.png",
     "alt": "Terrarium"
