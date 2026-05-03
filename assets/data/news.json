@@ -32,7 +32,7 @@
     "title": "When Anonymity Breaks: Identifying Models Behind Text-to-Image Leaderboards",
     "authors": "Ali Naseh, Anshuman Suri, Yuefeng Peng, Harsh Chaudhari, Alina Oprea, Amir Houmansadr",
     "link": "https://arxiv.org/pdf/2510.06525",
-    "image": "/images/t2i_cvpr.png",
+    "image": "/figures/t2i_cvpr.png",
     "alt": "CVPR 2026 text-to-image leaderboard paper"
   },
   {
