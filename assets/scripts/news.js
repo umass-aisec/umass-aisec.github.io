@@ -8,7 +8,7 @@ async function loadRecentNews() {
 
         const recentNews = newsItems
             .sort((a, b) => new Date(b.date) - new Date(a.date))
-            .slice(0, 3);
+            .slice(0, 4);
 
         container.innerHTML = recentNews.map(item => {
             const isExternal = item.link && item.link.startsWith("http");
