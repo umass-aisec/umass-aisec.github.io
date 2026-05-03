@@ -38,7 +38,7 @@
   {
     "date": "2026-01-25",
     "label": "ICLR 2026",
-    "title": "BIAS SIMILARITY MEASUREMENT: A BLACK-BOX AUDIT OF FAIRNESS ACROSS LLMS",
+    "title": "Bias Similarity Measurement: A Black-Box Audit of Fairness Across LLMs",
     "authors": "Hyejun Jeong, Shiqing Ma, Amir Houmansadr",
     "link": "#",
     "image": "/figures/Bias_similarity_iclr.png",
