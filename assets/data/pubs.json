@@ -1,5 +1,32 @@
 [
     {
+        "pub": "https://arxiv.org/abs/2604.16659",
+        "url": "https://arxiv.org/abs/2604.16659",
+        "title": "Benign Fine-Tuning Breaks Safety Alignment in Audio LLMs.",
+        "year": "2026",
+        "month": "04",
+        "venue": "arXiv",
+        "coAuthorName": "Jaechul Roh, Amir Houmansadr"
+    },
+    {
+        "pub": "https://arxiv.org/abs/2602.15198",
+        "url": "https://arxiv.org/abs/2602.15198",
+        "title": "Colosseum: Auditing Collusion in Cooperative Multi-Agent Systems.",
+        "year": "2026",
+        "month": "02",
+        "venue": "arXiv",
+        "coAuthorName": "Mason Nakamura, Abhinav Kumar, Saswat Das, Sahar Abdelnabi, Saaduddin Mahmud, Ferdinando Fioretto, Shlomo Zilberstein, Eugene Bagdasarian"
+    },
+    {
+        "pub": "https://arxiv.org/abs/2602.00851",
+        "url": "https://arxiv.org/abs/2602.00851",
+        "title": "Persuasion Propagation in LLM Agents.",
+        "year": "2026",
+        "month": "01",
+        "venue": "arXiv",
+        "coAuthorName": "Hyejun Jeong, Amir Houmansadr, Shlomo Zilberstein, Eugene Bagdasarian"
+    },
+    {
         "pub": "https://arxiv.org/abs/2601.09647",
         "url": "https://arxiv.org/abs/2601.09647",
         "title": "Identifying Models Behind Text-to-Image Leaderboards.",
@@ -16,6 +43,15 @@
         "month": "10",
         "venue": "ICML",
         "coAuthorName": "Yuefeng Peng, Parnian Afshar, Megan Ganji, Thomas Butler, Amir Houmansadr, Mingxian Wang, Dezhi Hong"
+    },
+    {
+        "pub": "https://arxiv.org/abs/2510.14312",
+        "url": "https://arxiv.org/abs/2510.14312",
+        "title": "Terrarium: Revisiting the Blackboard for Multi-Agent Safety, Privacy, and Security Studies.",
+        "year": "2025",
+        "month": "10",
+        "venue": "arXiv",
+        "coAuthorName": "Mason Nakamura, Abhinav Kumar, Saaduddin Mahmud, Sahar Abdelnabi, Shlomo Zilberstein, Eugene Bagdasarian"
     },
     {
         "pub": "https://arxiv.org/abs/2509.01619",
