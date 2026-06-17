@@ -691,8 +691,37 @@ a:hover {
     to { opacity: 1; }
 }
 
-.fade-in {
-    animation: fadeIn 0.6s ease-out;
+/* ============================================
+   Smooth first-load transitions
+   ============================================ */
+/* Gentle fade for the whole page on first paint. `both` fill applies opacity:0
+   from the very first frame, so content is never shown-then-hidden (no flash).
+   If the stylesheet fails to load, the body just stays visible. */
+body {
+    animation: fadeIn 0.35s ease-out both;
+}
+
+/* Ease in content that scripts inject after load (news, people, publications,
+   seminar) so it settles in instead of popping. These nodes are freshly created
+   on injection, so animating them from opacity:0 cannot cause the earlier flash. */
+#recent-news-list > *,
+#students > *,
+#alumni > *,
+#publications > *,
+#calendar > * {
+    animation: fadeIn 0.45s ease-out both;
+}
+
+/* Respect users who opt out of motion. */
+@media (prefers-reduced-motion: reduce) {
+    body,
+    #recent-news-list > *,
+    #students > *,
+    #alumni > *,
+    #publications > *,
+    #calendar > * {
+        animation: none;
+    }
 }
 
 /* Staggered animation for cards */

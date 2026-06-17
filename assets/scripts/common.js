@@ -88,22 +88,3 @@ document.getElementById("footer").replaceChildren(
         </footer>
     `)
 );
-
-
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.animationDelay = '0.1s';
-            entry.target.classList.add('fade-in');
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.section-card, .stats-grid, .expertise-card, .card').forEach(el => {
-    observer.observe(el);
-});
