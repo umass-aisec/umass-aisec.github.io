@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Redirecting… | UMass AI Security Lab</title>
+    <!-- Back-compat: /projects/* was renamed to /demo/*. Old links fall through to
+         this 404 page, so rewrite the namespace to the new path at any depth. -->
+    <script>
+        (function () {
+            var p = location.pathname;
+            if (p === "/projects" || p.indexOf("/projects/") === 0) {
+                location.replace(p.replace(/^\/projects/, "/demo") + location.search + location.hash);
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <p>Page not found. Go to the <a href="/">homepage</a>.</p>
+</body>
+
+</html>

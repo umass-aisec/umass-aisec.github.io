@@ -58,8 +58,8 @@
     "label": "New Demo",
     "title": "Terrarium demo is now available",
     "description": "Terrarium: Multi-Agent Safety, Privacy, and Security Studies",
-    "link": "/projects/terrarium/",
-    "image": "/projects/terrarium/static/images/terrarium_example.png",
+    "link": "/demo/terrarium/",
+    "image": "/demo/terrarium/static/images/terrarium_example.png",
     "alt": "Terrarium"
   }
 ]
