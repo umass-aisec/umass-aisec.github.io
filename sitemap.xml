@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://aisec.cs.umass.edu/</loc>
+  </url>
+  <url>
+    <loc>https://aisec.cs.umass.edu/people/</loc>
+  </url>
+  <url>
+    <loc>https://aisec.cs.umass.edu/seminar/</loc>
+  </url>
+  <url>
+    <loc>https://aisec.cs.umass.edu/publications/</loc>
+  </url>
+  <url>
+    <loc>https://aisec.cs.umass.edu/demo/</loc>
+  </url>
+  <url>
+    <loc>https://aisec.cs.umass.edu/blog/</loc>
+  </url>
+  <url>
+    <loc>https://aisec.cs.umass.edu/blog/posts/imperfection.html</loc>
+  </url>
+  <url>
+    <loc>https://aisec.cs.umass.edu/blog/posts/thoughts-on-colm-2025.html</loc>
+  </url>
+  <url>
+    <loc>https://aisec.cs.umass.edu/demo/terrarium/</loc>
+  </url>
+  <url>
+    <loc>https://aisec.cs.umass.edu/demo/web-agent-throttling/</loc>
+  </url>
+  <url>
+    <loc>https://aisec.cs.umass.edu/demo/bobs-confetti/</loc>
+  </url>
+</urlset>
