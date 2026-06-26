@@ -872,3 +872,10 @@ footer .text-muted {
     padding: 1.5rem;
     margin-bottom: 1.5rem;
 }
+
+/* Misc */
+
+.custom-icon {
+    width: 1.5em;
+    height: 1.5em;
+}
