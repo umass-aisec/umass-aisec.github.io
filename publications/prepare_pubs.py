@@ -124,6 +124,9 @@ df = pd.concat([non_arxiv_rows, arxiv_to_keep], ignore_index=True)
 # Final sort
 df = df.sort_values(by=["year", "month", "venue"], ascending=[False, False, False])
 
+# Drop the DBLP record id; the site only uses "url"
+df = df.drop(columns="pub")
+
 data = df.to_dict(orient="records")
 with open("../assets/data/pubs_draft.json", "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=4)

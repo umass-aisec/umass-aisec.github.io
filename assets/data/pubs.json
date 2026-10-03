@@ -1,6 +1,37 @@
 [
     {
-        "pub": "https://arxiv.org/abs/2604.16659",
+        "url": "https://arxiv.org/abs/2609.33903",
+        "title": "Can Prompt Anonymity Protect Your Identity From LLM Providers?",
+        "year": "2026",
+        "month": "09",
+        "venue": "arXiv",
+        "coAuthorName": "Dzung Pham, Dillon Sheils, Naina Singh, Amir Houmansadr"
+    },
+    {
+        "url": "https://arxiv.org/abs/2606.25836",
+        "title": "AI Snitches Get Glitches: Towards Evading Agentic Surveillance.",
+        "year": "2026",
+        "month": "06",
+        "venue": "arXiv",
+        "coAuthorName": "Hyejun Jeong, Dzung Pham, Amir Houmansadr, Eugene Bagdasarian"
+    },
+    {
+        "url": "https://arxiv.org/abs/2606.20910",
+        "title": "Whose Agent Are You? Multi-Layer Fingerprinting and Attribution of Autonomous Web Agents.",
+        "year": "2026",
+        "month": "06",
+        "venue": "arXiv",
+        "coAuthorName": "Dayeon Kang, Hyejun Jeong, Jade Sheffey, Pubali Datta, Amir Houmansadr"
+    },
+    {
+        "url": "https://arxiv.org/abs/2605.20519",
+        "title": "Codec-Robust Attacks on Audio LLMs.",
+        "year": "2026",
+        "month": "05",
+        "venue": "arXiv",
+        "coAuthorName": "Jaechul Roh, Jean-Philippe Monteuuis, Jonathan Petit, Amir Houmansadr"
+    },
+    {
         "url": "https://arxiv.org/abs/2604.16659",
         "title": "Benign Fine-Tuning Breaks Safety Alignment in Audio LLMs.",
         "year": "2026",
@@ -9,16 +40,22 @@
         "coAuthorName": "Jaechul Roh, Amir Houmansadr"
     },
     {
-        "pub": "https://arxiv.org/abs/2602.15198",
         "url": "https://arxiv.org/abs/2602.15198",
         "title": "Colosseum: Auditing Collusion in Cooperative Multi-Agent Systems.",
         "year": "2026",
         "month": "02",
-        "venue": "arXiv",
+        "venue": "NeurIPS",
         "coAuthorName": "Mason Nakamura, Abhinav Kumar, Saswat Das, Sahar Abdelnabi, Saaduddin Mahmud, Ferdinando Fioretto, Shlomo Zilberstein, Eugene Bagdasarian"
     },
     {
-        "pub": "https://arxiv.org/abs/2602.00851",
+        "url": "https://arxiv.org/abs/2602.13516",
+        "title": "SPILLage: Agentic Oversharing on the Web.",
+        "year": "2026",
+        "month": "02",
+        "venue": "arXiv",
+        "coAuthorName": "Jaechul Roh, Eugene Bagdasarian, Hamed Haddadi, Ali Shahin Shamsabadi"
+    },
+    {
         "url": "https://arxiv.org/abs/2602.00851",
         "title": "Persuasion Propagation in LLM Agents.",
         "year": "2026",
@@ -27,7 +64,6 @@
         "coAuthorName": "Hyejun Jeong, Amir Houmansadr, Shlomo Zilberstein, Eugene Bagdasarian"
     },
     {
-        "pub": "https://arxiv.org/abs/2601.09647",
         "url": "https://arxiv.org/abs/2601.09647",
         "title": "Identifying Models Behind Text-to-Image Leaderboards.",
         "year": "2026",
@@ -36,7 +72,6 @@
         "coAuthorName": "Ali Naseh, Yuefeng Peng, Anshuman Suri, Harsh Chaudhari, Alina Oprea, Amir Houmansadr"
     },
     {
-        "pub": "https://arxiv.org/abs/2510.17620",
         "url": "https://arxiv.org/abs/2510.17620",
         "title": "Forget to Know, Remember to Use: Context-Aware Unlearning for Large Language Models.",
         "year": "2026",
@@ -45,7 +80,6 @@
         "coAuthorName": "Yuefeng Peng, Parnian Afshar, Megan Ganji, Thomas Butler, Amir Houmansadr, Mingxian Wang, Dezhi Hong"
     },
     {
-        "pub": "https://arxiv.org/abs/2510.14312",
         "url": "https://arxiv.org/abs/2510.14312",
         "title": "Terrarium: Revisiting the Blackboard for Multi-Agent Safety, Privacy, and Security Studies.",
         "year": "2025",
@@ -54,7 +88,6 @@
         "coAuthorName": "Mason Nakamura, Abhinav Kumar, Saaduddin Mahmud, Sahar Abdelnabi, Shlomo Zilberstein, Eugene Bagdasarian"
     },
     {
-        "pub": "https://arxiv.org/abs/2509.01619",
         "url": "https://arxiv.org/abs/2509.01619",
         "title": "Throttling Web Agents Using Reasoning Gates.",
         "year": "2025",
@@ -63,7 +96,6 @@
         "coAuthorName": "Abhinav Kumar, Jaechul Roh, Ali Naseh, Amir Houmansadr, Eugene Bagdasarian"
     },
     {
-        "pub": "https://arxiv.org/abs/2508.20282",
         "url": "https://arxiv.org/abs/2508.20282",
         "title": "Network-Level Prompt and Trait Leakage in Local Research Agents.",
         "year": "2026",
@@ -72,7 +104,6 @@
         "coAuthorName": "Hyejun Jeong, Mohammadreza Teymoorianfard, Abhinav Kumar, Amir Houmansadr, Eugene Badasarian"
     },
     {
-        "pub": "https://arxiv.org/abs/2403.02437",
         "url": "https://arxiv.org/abs/2403.02437",
         "title": "A Survey on Federated Unlearning: Challenges and Opportunities.",
         "year": "2026",
@@ -81,7 +112,6 @@
         "coAuthorName": "Hyejun Jeong, Shiqing Ma, Amir Houmansadr"
     },
     {
-        "pub": "https://arxiv.org/abs/2410.12010",
         "url": "https://arxiv.org/abs/2410.12010",
         "title": "Bias Similarity Measurement: A Black-Box Audit of Fairness Across LLMs.",
         "year": "2026",
@@ -90,8 +120,7 @@
         "coAuthorName": "Hyejun Jeong, Shiqing Ma, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2507-08983",
-        "url": "https://doi.org/10.48550/ARXIV.2507.08983",
+        "url": "https://doi.org/10.48550/arxiv.2507.08983",
         "title": "Exploiting Leaderboards for Large-Scale Distribution of Malicious Models.",
         "year": "2026",
         "month": "00",
@@ -99,8 +128,7 @@
         "coAuthorName": "Anshuman Suri, Harsh Chaudhari, Yuefeng Peng, Ali Naseh, Amir Houmansadr, Alina Oprea"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2507-17937",
-        "url": "https://doi.org/10.48550/ARXIV.2507.17937",
+        "url": "https://doi.org/10.48550/arxiv.2507.17937",
         "title": "Bob's Confetti: Phonetic Memorization Attacks in Music and Video Generation.",
         "year": "2025",
         "month": "07",
@@ -108,8 +136,7 @@
         "coAuthorName": "Jaechul Roh, Zachary Novack, Yuefeng Peng, Niloofar Mireshghallah, Taylor Berg-Kirkpatrick, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2505-01406",
-        "url": "https://doi.org/10.48550/ARXIV.2505.01406",
+        "url": "https://doi.org/10.48550/arxiv.2505.01406",
         "title": "VIDSTAMP: A Temporally-Aware Watermark for Ownership and Integrity in Video Diffusion Models.",
         "year": "2025",
         "month": "05",
@@ -117,8 +144,7 @@
         "coAuthorName": "Mohammadreza Teymoorianfard, Shiqing Ma, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2505-12625",
-        "url": "https://doi.org/10.48550/ARXIV.2505.12625",
+        "url": "https://doi.org/10.48550/arxiv.2505.12625",
         "title": "R1dacted: Investigating Local Censorship in DeepSeek's R1 Language Model.",
         "year": "2025",
         "month": "05",
@@ -126,8 +152,7 @@
         "coAuthorName": "Ali Naseh, Harsh Chaudhari, Jaechul Roh, Mingshi Wu, Alina Oprea, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2504-01094",
-        "url": "https://doi.org/10.48550/ARXIV.2504.01094",
+        "url": "https://doi.org/10.48550/arxiv.2504.01094",
         "title": "Multilingual and Multi-Accent Jailbreaking of Audio LLMs.",
         "year": "2025",
         "month": "04",
@@ -135,8 +160,7 @@
         "coAuthorName": "Jaechul Roh, Virat Shejwalkar, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2505-14549",
-        "url": "https://doi.org/10.48550/ARXIV.2505.14549",
+        "url": "https://doi.org/10.48550/arxiv.2505.14549",
         "title": "Can Large Language Models Really Recognize Your Name?",
         "year": "2026",
         "month": "06",
@@ -144,8 +168,7 @@
         "coAuthorName": "Dzung Pham, Peter Kairouz, Niloofar Mireshghallah, Eugene Bagdasarian, Chau Minh Pham, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2502-00306",
-        "url": "https://doi.org/10.48550/ARXIV.2502.00306",
+        "url": "https://doi.org/10.48550/arxiv.2502.00306",
         "title": "Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation.",
         "year": "2025",
         "month": "02",
@@ -153,8 +176,7 @@
         "coAuthorName": "Ali Naseh, Yuefeng Peng, Anshuman Suri, Harsh Chaudhari, Alina Oprea, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2502-02542",
-        "url": "https://doi.org/10.48550/ARXIV.2502.02542",
+        "url": "https://doi.org/10.48550/arxiv.2502.02542",
         "title": "OverThink: Slowdown Attacks on Reasoning LLMs.",
         "year": "2025",
         "month": "02",
@@ -162,7 +184,6 @@
         "coAuthorName": "Abhinav Kumar, Jaechul Roh, Ali Naseh, Marzena Karpinska, Mohit Iyyer, Amir Houmansadr, Eugene Bagdasarian"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2406-15213",
         "url": "https://www.usenix.org/conference/usenixsecurity25/presentation/naseh",
         "title": "Backdooring Bias (B^2) into Stable Diffusion Models.",
         "year": "2025",
@@ -171,7 +192,6 @@
         "coAuthorName": "Ali Naseh, Jaechul Roh, Eugene Bagdasaryan, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/conf/ndss/0002KH25",
         "url": "https://www.ndss-symposium.org/ndss-paper/raifle-reconstruction-attacks-on-interaction-based-federated-learning-with-adversarial-data-manipulation/",
         "title": "RAIFLE: Reconstruction Attacks on Interaction-based Federated Learning with Adversarial Data Manipulation.",
         "year": "2025",
@@ -180,7 +200,6 @@
         "coAuthorName": "Dzung Pham, Shreyas Kulkarni, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/conf/ndss/PengNH25",
         "url": "https://www.ndss-symposium.org/ndss-paper/diffence-fencing-membership-privacy-with-diffusion-models/",
         "title": "Diffence: Fencing Membership Privacy With Diffusion Models.",
         "year": "2025",
@@ -189,8 +208,7 @@
         "coAuthorName": "Yuefeng Peng, Ali Naseh, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/conf/aaai/TajimaWH25",
-        "url": "https://doi.org/10.1609/AAAI.V39I19.34289",
+        "url": "https://doi.org/10.1609/aaai.v39i19.34289",
         "title": "Improving Private Random Forest Prediction Using Matrix Representation.",
         "year": "2025",
         "month": "00",
@@ -198,8 +216,7 @@
         "coAuthorName": "Arisa Tajima, Joie Wu, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2404-13784",
-        "url": "https://doi.org/10.48550/ARXIV.2404.13784",
+        "url": "https://doi.org/10.48550/arxiv.2404.13784",
         "title": "Iteratively Prompting Multimodal LLMs to Reproduce Natural and AI-Generated Images.",
         "year": "2024",
         "month": "00",
@@ -207,8 +224,7 @@
         "coAuthorName": "Ali Naseh, Katherine Thai, Mohit Iyyer, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2406-05927",
-        "url": "https://doi.org/10.48550/ARXIV.2406.05927",
+        "url": "https://doi.org/10.48550/arxiv.2406.05927",
         "title": "MeanSparse: Post-Training Robustness Enhancement Through Mean-Centered Feature Sparsification.",
         "year": "2024",
         "month": "00",
@@ -216,8 +232,7 @@
         "coAuthorName": "Sajjad Amini, Mohammadreza Teymoorianfard, Shiqing Ma, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2407-08792",
-        "url": "https://doi.org/10.48550/ARXIV.2407.08792",
+        "url": "https://doi.org/10.48550/arxiv.2407.08792",
         "title": "ProxyGPT: Enabling Anonymous Queries in AI Chatbots with (Un)Trustworthy Browser Proxies.",
         "year": "2025",
         "month": "00",
@@ -225,8 +240,7 @@
         "coAuthorName": "Dzung Pham, Jade Sheffey, Chau Minh Pham, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2411-01705",
-        "url": "https://doi.org/10.48550/ARXIV.2411.01705",
+        "url": "https://doi.org/10.48550/arxiv.2411.01705",
         "title": "Data Extraction Attacks in Retrieval-Augmented Generation via Backdoors.",
         "year": "2024",
         "month": "00",
@@ -234,7 +248,6 @@
         "coAuthorName": "Yuefeng Peng, Junda Wang, Hong Yu, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/conf/nips/PengRMH24",
         "url": "http://papers.nips.cc/paper_files/paper/2024/hash/71f88122d414cfeb455ac0ed932fbe1f-Abstract-Conference.html",
         "title": "OSLO: One-Shot Label-Only Membership Inference Attacks.",
         "year": "2024",
@@ -243,8 +256,7 @@
         "coAuthorName": "Yuefeng Peng, Jaechul Roh, Subhransu Maji, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2312-03692",
-        "url": "https://doi.org/10.48550/ARXIV.2312.03692",
+        "url": "https://doi.org/10.48550/arxiv.2312.03692",
         "title": "Memory Triggers: Unveiling Memorization in Text-To-Image Generative Models through Word-Level Duplication.",
         "year": "2023",
         "month": "00",
@@ -252,8 +264,7 @@
         "coAuthorName": "Ali Naseh, Jaechul Roh, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/journals/corr/abs-2312-07550",
-        "url": "https://doi.org/10.48550/ARXIV.2312.07550",
+        "url": "https://doi.org/10.48550/arxiv.2312.07550",
         "title": "Understanding (Un)Intended Memorization in Text-to-Image Generative Models.",
         "year": "2023",
         "month": "00",
@@ -261,7 +272,6 @@
         "coAuthorName": "Ali Naseh, Jaechul Roh, Amir Houmansadr"
     },
     {
-        "pub": "https://dblp.org/rec/conf/ccs/NasehKIH23",
         "url": "https://doi.org/10.1145/3576915.3616652",
         "title": "Stealing the Decoding Algorithms of Language Models.",
         "year": "2023",
