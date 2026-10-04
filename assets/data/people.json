@@ -42,12 +42,24 @@
         "name": "Arisa Tajima",
         "link": "https://arisa77.github.io/",
         "img": "arisa.jpg",
-        "alumnus": false
+        "alumnus": true
     },
     {
         "name": "Abhinav Kumar",
         "link": "https://www.securegradients.com/",
         "img": "abhinav.jpg",
+        "alumnus": false
+    },
+    {
+        "name": "Jeffrey Chiang",
+        "link": "https://santaboi.github.io/",
+        "img": "jeffrey.jpeg",
+        "alumnus": false
+    },
+    {
+        "name": "Abed Garra",
+        "link": "https://abdullahgarra.github.io/",
+        "img": "abed.jpg",
         "alumnus": false
     }
 ]
